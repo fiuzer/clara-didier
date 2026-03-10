@@ -1,0 +1,15 @@
+<svg width="800" height="1024" viewBox="0 0 800 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="detailBg" x1="70" y1="70" x2="740" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F0DA"/>
+      <stop offset="1" stop-color="#D5B779"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1024" rx="64" fill="url(#detailBg)"/>
+  <rect x="82" y="112" width="636" height="800" rx="54" fill="#FEF9EE" fill-opacity="0.77"/>
+  <circle cx="400" cy="360" r="120" fill="#C7A161"/>
+  <rect x="255" y="510" width="290" height="230" rx="110" fill="#A57C3A"/>
+  <text x="400" y="860" text-anchor="middle" font-family="serif" font-size="35" fill="#4C3918">
+    Bloco visual complementar
+  </text>
+</svg>

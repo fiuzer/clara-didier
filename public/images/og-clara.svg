@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ogBg" x1="100" y1="60" x2="1070" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8E8"/>
+      <stop offset="1" stop-color="#E3C98F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <rect x="70" y="70" width="1060" height="490" rx="42" fill="#FFFDF7" fill-opacity="0.8"/>
+  <text x="130" y="245" font-family="serif" font-size="84" fill="#3A2D13">Clara Didier</text>
+  <text x="132" y="315" font-family="sans-serif" font-size="40" fill="#5A451F">
+    Psicoterapia individual para jovens e adultos
+  </text>
+  <text x="132" y="384" font-family="sans-serif" font-size="30" fill="#7E642E">
+    Agendamento rapido pelo WhatsApp
+  </text>
+</svg>
