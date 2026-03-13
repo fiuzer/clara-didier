@@ -13,7 +13,7 @@ export function ContactSection() {
   );
 
   return (
-    <section id="contato" aria-labelledby="contato-title" className="pb-28 pt-12 lg:pb-32">
+    <section id="contato" aria-labelledby="contato-title" className="bg-white pb-28 pt-12 lg:pb-32">
       <Container className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-end">
         <Reveal>
           <SectionTitle

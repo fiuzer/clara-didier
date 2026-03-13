@@ -10,7 +10,7 @@ export function AboutSection() {
   const content = landingContent.about;
 
   return (
-    <section id="sobre" aria-labelledby="sobre-title" className="py-24 lg:py-28">
+    <section id="sobre" aria-labelledby="sobre-title" className="bg-white py-24 lg:py-28">
       <Container className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <Reveal>
           <div className="section-surface mx-auto max-w-md rounded-[2rem] p-3 sm:p-4">
@@ -40,9 +40,9 @@ export function AboutSection() {
             {content.highlights.map((highlight) => (
               <article
                 key={highlight}
-                className="rounded-2xl border border-[color:var(--gold-200)] bg-white/85 px-5 py-4 text-sm font-medium text-[color:var(--gold-900)]"
+                className="rounded-2xl border border-[color:var(--gold-200)] bg-white/85 px-5 py-4 text-sm font-medium text-[color:var(--gold-900)] shadow-[0_18px_40px_-36px_rgba(27,20,9,0.8)]"
               >
-                {highlight}
+                <span className="inline-flex border-l-[3px] border-[color:var(--gold-accent)] pl-3">{highlight}</span>
               </article>
             ))}
           </div>

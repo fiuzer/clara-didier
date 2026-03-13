@@ -15,6 +15,7 @@ export function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[color:var(--gold-200)] bg-white/82 backdrop-blur-xl">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[3px] bg-[linear-gradient(90deg,var(--gold-metal-4),var(--gold-metal-2),var(--gold-metal-1),var(--gold-metal-3),var(--gold-metal-4))] shadow-[0_0_14px_rgba(213,159,43,0.55)]" />
       <Container className="flex h-20 items-center justify-between gap-4">
         <a
           href="#inicio"

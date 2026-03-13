@@ -23,7 +23,6 @@ export function AudienceSection() {
             description={content.description}
           />
         </Reveal>
-
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {content.cards.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.08}>

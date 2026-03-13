@@ -9,12 +9,11 @@ export function BenefitsSection() {
   const content = landingContent.benefits;
 
   return (
-    <section id="beneficios" aria-labelledby="beneficios-title" className="py-24 lg:py-28">
+    <section id="beneficios" aria-labelledby="beneficios-title" className="bg-white py-24 lg:py-28">
       <Container>
         <Reveal>
           <SectionTitle id="beneficios-title" eyebrow={content.eyebrow} title={content.title} centered />
         </Reveal>
-
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {content.items.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.04}>

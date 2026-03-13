@@ -75,8 +75,9 @@ export function HeroSection() {
               {content.metrics.map((metric) => (
                 <article
                   key={metric.title}
-                  className="rounded-2xl border border-[color:var(--gold-200)] bg-white/90 px-4 py-4 shadow-[0_24px_45px_-40px_rgba(22,18,11,0.95)]"
+                  className="relative overflow-hidden rounded-2xl border border-[color:var(--gold-200)] bg-white/90 px-4 py-4 shadow-[0_24px_45px_-40px_rgba(22,18,11,0.95)]"
                 >
+                  <span className="pointer-events-none absolute inset-x-0 top-0 h-[2px] bg-[linear-gradient(90deg,var(--gold-metal-4),var(--gold-metal-2),var(--gold-metal-1),var(--gold-metal-3),var(--gold-metal-4))] opacity-95" />
                   <h2 className="text-sm font-semibold text-[color:var(--gold-900)]">{metric.title}</h2>
                   <p className="mt-2 text-xs leading-relaxed text-[color:var(--slate-700)]">{metric.description}</p>
                 </article>

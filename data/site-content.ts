@@ -20,6 +20,7 @@ export const navigationItems = [
   { label: "Para quem", href: "#publico" },
   { label: "Beneficios", href: "#beneficios" },
   { label: "Diferenciais", href: "#diferenciais" },
+  { label: "FAQ", href: "#faq" },
   { label: "Agendamento", href: "#agendar" },
   { label: "Contato", href: "#contato" },
 ] as const;
@@ -167,6 +168,44 @@ export const landingContent = {
       "Se voce procura psicologa para jovens e adultos, envie uma mensagem e receba orientacao para iniciar seu atendimento.",
     button: "Agendar atendimento no WhatsApp",
     infoLabel: "Informacoes de contato",
+  },
+  faq: {
+    eyebrow: "Duvidas frequentes",
+    title: "Perguntas frequentes sobre o atendimento psicologico.",
+    description:
+      "Se esta e sua primeira experiencia com terapia, aqui estao respostas objetivas para ajudar voce a dar o primeiro passo com seguranca.",
+    items: [
+      {
+        question: "Como funciona a psicoterapia individual?",
+        answer:
+          "Cada sessao e um espaco de escuta acolhedora e profissional, onde trabalhamos suas demandas com profundidade e respeito ao seu ritmo. O processo e personalizado e evolui conforme seus objetivos terapeuticos.",
+      },
+      {
+        question: "Para quem e indicado o atendimento?",
+        answer:
+          "O atendimento e voltado para jovens e adultos que buscam apoio emocional, autoconhecimento, fortalecimento interno e melhor qualidade de vida em diferentes fases e desafios.",
+      },
+      {
+        question: "Como faco o agendamento da primeira sessao?",
+        answer:
+          "O agendamento e feito pelo WhatsApp. Voce envia uma mensagem, recebe orientacoes iniciais e combinamos o melhor formato e horario para iniciar seu atendimento.",
+      },
+      {
+        question: "Atende jovens e adultos com demandas diferentes?",
+        answer:
+          "Sim. O trabalho clinico e adaptado para a realidade de cada pessoa, considerando contexto, momento de vida e necessidade emocional, sempre com abordagem humanizada.",
+      },
+      {
+        question: "Tambem realiza palestras para empresas e escolas?",
+        answer:
+          "Sim. Alem da psicoterapia individual, realizo palestras para empresas e escolas com foco em saude emocional, prevencao e desenvolvimento socioemocional.",
+      },
+      {
+        question: "Nunca fiz terapia. Posso comecar mesmo assim?",
+        answer:
+          "Com certeza. E normal ter duvidas no inicio. O primeiro contato e conduzido com acolhimento e clareza para que voce se sinta seguro(a) durante todo o processo.",
+      },
+    ],
   },
   footer: {
     rights: "Todos os direitos reservados.",

@@ -14,7 +14,7 @@ export function CTASection() {
       <Container>
         <Reveal>
           <div className="relative overflow-hidden rounded-[2.1rem] border border-[color:var(--gold-300)] bg-[linear-gradient(130deg,rgba(255,255,255,0.95),rgba(247,240,220,0.88))] px-6 py-14 text-center shadow-[0_50px_110px_-70px_rgba(24,18,10,0.9)] sm:px-12">
-            <div className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[color:var(--gold-300)]/24 blur-2xl" />
+            <div className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[color:var(--gold-400)]/34 blur-2xl" />
             <h2
               id="agendar-title"
               className="relative font-display text-4xl leading-tight text-[color:var(--gold-950)] sm:text-5xl"

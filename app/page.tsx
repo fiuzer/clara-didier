@@ -5,6 +5,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { CredibilitySection } from "@/components/sections/CredibilitySection";
 import { CTASection } from "@/components/sections/CTASection";
 import { DifferentialsSection } from "@/components/sections/DifferentialsSection";
+import { FAQSection } from "@/components/sections/FAQSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <BenefitsSection />
       <DifferentialsSection />
       <CredibilitySection />
+      <FAQSection />
       <CTASection />
       <ContactSection />
     </>

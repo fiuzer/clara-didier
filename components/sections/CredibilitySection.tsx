@@ -11,7 +11,7 @@ export function CredibilitySection() {
   const content = landingContent.credibility;
 
   return (
-    <section id="credibilidade" aria-labelledby="credibilidade-title" className="py-24 lg:py-28">
+    <section id="credibilidade" aria-labelledby="credibilidade-title" className="bg-white py-24 lg:py-28">
       <Container className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
         <div>
           <Reveal>
@@ -22,7 +22,6 @@ export function CredibilitySection() {
               description={content.description}
             />
           </Reveal>
-
           <div className="mt-10 grid gap-5 sm:grid-cols-2">
             {content.pillars.map((item, index) => (
               <Reveal key={item.title} delay={index * 0.06}>

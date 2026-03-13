@@ -77,7 +77,7 @@ export function Button({
           )}
           aria-hidden="true"
         >
-          →
+          {"->"}
         </span>
       ) : null}
     </motion.a>

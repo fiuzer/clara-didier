@@ -6,6 +6,7 @@
 
   --gold-50: #fdf9ef;
   --gold-100: #f9f1dc;
+  --gold-150: #f3e8cd;
   --gold-200: #efdfbc;
   --gold-300: #e1cfa0;
   --gold-400: #d3b576;
@@ -15,6 +16,12 @@
   --gold-800: #5a451f;
   --gold-900: #3a2d13;
   --gold-950: #221808;
+  --gold-accent: #d59f2b;
+  --gold-accent-light: #efca70;
+  --gold-metal-1: #fff9dc;
+  --gold-metal-2: #f7e8bd;
+  --gold-metal-3: #eccb84;
+  --gold-metal-4: #d9b35a;
 
   --slate-500: #8b8376;
   --slate-600: #6d6558;
@@ -61,6 +68,32 @@ section[id] {
   scroll-margin-top: 6.5rem;
 }
 
+main section[id] {
+  position: relative;
+}
+
+main section[id]:not(#inicio)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--gold-metal-3) 0%,
+    var(--gold-metal-2) 22%,
+    var(--gold-metal-1) 50%,
+    var(--gold-metal-2) 78%,
+    var(--gold-metal-3) 100%
+  );
+  box-shadow:
+    0 1px 0 rgba(255, 252, 236, 0.95) inset,
+    0 0 10px rgba(236, 203, 132, 0.4);
+  opacity: 0.92;
+  pointer-events: none;
+}
+
 :focus-visible {
   outline: 2px solid var(--gold-500);
   outline-offset: 2px;
@@ -77,7 +110,29 @@ section[id] {
 }
 
 .section-surface {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.93), rgba(252, 246, 232, 0.72));
-  border: 1px solid var(--gold-200);
-  box-shadow: 0 40px 100px -74px rgba(30, 22, 11, 0.7);
+  border: 1px solid #e9dfce;
+  box-shadow:
+    0 40px 100px -74px rgba(30, 22, 11, 0.7),
+    0 0 0 1px rgba(233, 223, 206, 0.4) inset;
+}
+
+.gold-divider {
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--gold-metal-2) 10%,
+    var(--gold-metal-3) 32%,
+    var(--gold-metal-1) 50%,
+    var(--gold-metal-3) 68%,
+    var(--gold-metal-2) 90%,
+    transparent 100%
+  );
+  box-shadow:
+    0 1px 0 rgba(255, 252, 230, 0.95) inset,
+    0 0 12px rgba(236, 203, 132, 0.52);
 }
