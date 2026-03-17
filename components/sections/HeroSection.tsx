@@ -36,6 +36,7 @@ export function HeroSection() {
               ariaLabel={content.primaryCta}
               trackSource="hero_primary_cta"
               withArrow
+              attention="glow"
             >
               {content.primaryCta}
             </Button>

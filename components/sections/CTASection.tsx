@@ -32,6 +32,7 @@ export function CTASection() {
                 trackSource="middle_cta"
                 className="min-w-72"
                 withArrow
+                attention="glow"
               >
                 {content.button}
               </Button>

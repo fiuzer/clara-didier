@@ -44,6 +44,7 @@ export function Header() {
             ariaLabel={landingContent.hero.primaryCta}
             trackSource="header_cta"
             withArrow
+            attention="glow"
           >
             {landingContent.hero.primaryCta}
           </Button>
@@ -100,6 +101,7 @@ export function Header() {
                 ariaLabel={landingContent.hero.primaryCta}
                 trackSource="header_mobile_cta"
                 withArrow
+                attention="glow"
               >
                 {landingContent.hero.primaryCta}
               </Button>

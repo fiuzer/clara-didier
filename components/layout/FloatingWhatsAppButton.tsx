@@ -1,12 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick } from "@/lib/tracking";
 
 export function FloatingWhatsAppButton() {
   const whatsappLink = getWhatsAppLink();
+  const reduceMotion = useReducedMotion();
 
   return (
     <motion.a
@@ -15,18 +16,69 @@ export function FloatingWhatsAppButton() {
       rel="noopener noreferrer"
       aria-label="Abrir WhatsApp para agendar atendimento"
       onClick={() => trackWhatsAppClick("floating_button")}
-      transition={{ duration: 0.2, ease: "easeOut" }}
+      animate={
+        reduceMotion
+          ? undefined
+          : {
+              y: [0, -1.2, 0],
+              scale: [1, 1.065, 1],
+              boxShadow: [
+                "0 36px 64px -22px rgba(169,126,41,0.92), 0 0 42px -6px rgba(201,156,70,0.78)",
+                "0 50px 90px -14px rgba(169,126,41,1), 0 0 64px 0px rgba(201,156,70,1)",
+                "0 36px 64px -22px rgba(169,126,41,0.92), 0 0 42px -6px rgba(201,156,70,0.78)",
+              ],
+            }
+      }
+      transition={
+        reduceMotion
+          ? { duration: 0.2, ease: "easeOut" }
+          : { duration: 3.2, ease: "easeInOut", repeat: Infinity }
+      }
       whileHover={{
         y: -2,
-        scale: 1.06,
-        boxShadow: "0 34px 62px -24px rgba(169,126,41,0.88)",
+        scale: 1.1,
+        boxShadow: "0 42px 74px -18px rgba(169,126,41,0.98), 0 0 70px 2px rgba(201,156,70,1)",
       }}
       whileTap={{ scale: 0.97 }}
-      className="group fixed bottom-4 right-4 z-50 inline-flex h-14 w-14 items-center justify-center overflow-hidden rounded-full border border-[color:var(--gold-500)] bg-[linear-gradient(135deg,var(--gold-300),var(--gold-500))] text-[color:var(--gold-950)] shadow-[0_30px_58px_-25px_rgba(169,126,41,0.82)] sm:bottom-6 sm:right-6 sm:h-16 sm:w-16"
+      className="group fixed bottom-4 right-4 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full border border-[color:var(--gold-500)] bg-[linear-gradient(135deg,var(--gold-300),var(--gold-500))] text-[color:var(--gold-950)] shadow-[0_36px_64px_-22px_rgba(169,126,41,0.92),0_0_48px_-4px_rgba(201,156,70,0.86)] sm:bottom-6 sm:right-6 sm:h-16 sm:w-16"
     >
-      <span className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-        <span className="absolute -left-14 top-0 h-full w-4 rotate-[16deg] bg-white/40 blur-[1px] transition-transform duration-500 group-hover:translate-x-24 sm:group-hover:translate-x-28" />
+      {!reduceMotion ? (
+        <span
+          className="pointer-events-none absolute -inset-3 rounded-full bg-[radial-gradient(circle,rgba(216,176,94,0.46)_0%,rgba(216,176,94,0)_72%)] blur-[8px]"
+          aria-hidden="true"
+        />
+      ) : null}
+      {!reduceMotion ? (
+        <motion.span
+          className="pointer-events-none absolute -inset-7 rounded-full bg-[radial-gradient(circle,rgba(216,176,94,0.68)_0%,rgba(216,176,94,0.0)_74%)] blur-[15px]"
+          animate={{ opacity: [0.44, 0.92, 0.44], scale: [0.9, 1.18, 0.9] }}
+          transition={{ duration: 2.4, ease: "easeInOut", repeat: Infinity }}
+          aria-hidden="true"
+        />
+      ) : null}
+      {!reduceMotion ? (
+        <motion.span
+          className="pointer-events-none absolute -inset-1 rounded-full border border-[color:var(--gold-200)]/85"
+          animate={{ scale: [1, 1.3], opacity: [0.5, 0] }}
+          transition={{ duration: 2.4, ease: "easeOut", repeat: Infinity }}
+          aria-hidden="true"
+        />
+      ) : null}
+      {!reduceMotion ? (
+        <motion.span
+          className="pointer-events-none absolute -inset-4 rounded-full border border-[color:var(--gold-100)]/75"
+          animate={{ scale: [1, 1.44], opacity: [0.34, 0] }}
+          transition={{ duration: 2.8, ease: "easeOut", repeat: Infinity, delay: 0.55 }}
+          aria-hidden="true"
+        />
+      ) : null}
+
+      <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-full">
+        <span className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <span className="absolute -left-14 top-0 h-full w-4 rotate-[16deg] bg-white/40 blur-[1px] transition-transform duration-500 group-hover:translate-x-24 sm:group-hover:translate-x-28" />
+        </span>
       </span>
+
       <svg
         width="24"
         height="24"

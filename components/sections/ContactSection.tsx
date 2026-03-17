@@ -31,6 +31,7 @@ export function ContactSection() {
               trackSource="contact_cta"
               ariaLabel={content.button}
               withArrow
+              attention="glow"
             >
               {content.button}
             </Button>
