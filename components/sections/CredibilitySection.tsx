@@ -43,7 +43,7 @@ export function CredibilitySection() {
           <div className="section-surface mx-auto max-w-md rounded-[2rem] p-3 sm:p-4">
             {/* Replacing note: optional supporting image/card for future professional photos */}
             <Image
-              src="/images/detail-placeholder.svg"
+              src="/images/third_image.JPG"
               alt="Elemento visual complementar reforçando credibilidade profissional"
               width={560}
               height={720}

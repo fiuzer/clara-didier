@@ -16,7 +16,7 @@ export function AboutSection() {
           <div className="section-surface mx-auto max-w-md rounded-[2rem] p-3 sm:p-4">
             {/* Replacing note: swap this image with a real office/session portrait in /public/images */}
             <Image
-              src="/images/about-placeholder.svg"
+              src="/images/second_image.JPG"
               alt="Imagem complementar da psicóloga Clara Didier em ambiente acolhedor"
               width={560}
               height={680}

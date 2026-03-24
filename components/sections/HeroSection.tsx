@@ -63,7 +63,7 @@ export function HeroSection() {
             <div className="relative rounded-[2.2rem] border border-[color:var(--gold-200)] bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(249,241,220,0.62))] p-3 shadow-[0_50px_110px_-65px_rgba(22,18,11,0.92)] sm:p-4">
               {/* Replacing note: swap this image with the final professional portrait in /public/images */}
               <Image
-                src="/images/hero-placeholder.svg"
+                src="/images/first_image.JPG"
                 alt="Retrato profissional de Clara Didier para a seção principal da landing page"
                 width={640}
                 height={800}
