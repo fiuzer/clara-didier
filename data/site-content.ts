@@ -30,7 +30,7 @@ export const landingContent = {
     eyebrow: "Psicologa para jovens e adultos",
     title: "Psicoterapia individual com escuta qualificada e cuidado humano.",
     subtitle:
-      "Um atendimento psicologico premium para quem deseja apoio emocional, desenvolvimento emocional e mais equilibrio na vida pessoal e profissional.",
+      "Um atendimento psicologico aprofundado para quem deseja apoio emocional, desenvolvimento emocional e mais equilibrio na vida pessoal e profissional.",
     trustPills: [
       "Atendimento psicologico para jovens e adultos",
       "Ambiente etico, acolhedor e confidencial",
