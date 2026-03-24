@@ -64,7 +64,7 @@ export function HeroSection() {
               {/* Replacing note: swap this image with the final professional portrait in /public/images */}
               <Image
                 src="/images/hero-placeholder.svg"
-                alt="Retrato profissional de Clara Didier para a secao principal da landing page"
+                alt="Retrato profissional de Clara Didier para a seção principal da landing page"
                 width={640}
                 height={800}
                 className="h-auto w-full rounded-[1.65rem] object-cover"

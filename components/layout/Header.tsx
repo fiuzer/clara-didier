@@ -20,12 +20,12 @@ export function Header() {
         <a
           href="#inicio"
           className="font-display text-[1.9rem] leading-none tracking-wide text-[color:var(--gold-900)] sm:text-[2rem]"
-          aria-label={`Inicio - ${siteConfig.name}`}
+          aria-label={`Início - ${siteConfig.name}`}
         >
           Clara Didier
         </a>
 
-        <nav className="hidden items-center gap-7 lg:flex" aria-label="Navegacao principal">
+        <nav className="hidden items-center gap-7 lg:flex" aria-label="Navegação principal">
           {navigationItems.map((item) => (
             <a
               key={item.href}
@@ -54,7 +54,7 @@ export function Header() {
           type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-expanded={menuOpen}
-          aria-label="Abrir menu de navegacao"
+          aria-label="Abrir menu de navegação"
           className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[color:var(--gold-300)] text-[color:var(--gold-800)] transition-colors hover:bg-[color:var(--gold-100)] lg:hidden"
         >
           <span className="relative h-4 w-5">

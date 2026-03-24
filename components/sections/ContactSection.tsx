@@ -9,7 +9,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 export function ContactSection() {
   const content = landingContent.contact;
   const whatsappLink = getWhatsAppLink(
-    "Ola, Clara! Gostaria de iniciar meu agendamento de terapia.",
+    "Olá, Clara! Gostaria de iniciar meu agendamento de terapia.",
   );
 
   return (
@@ -53,7 +53,7 @@ export function ContactSection() {
               {siteConfig.contact.email}
             </a>
             <p className="mt-6 text-sm leading-relaxed text-[color:var(--slate-700)]">
-              Atendimento com foco em saude emocional, apoio emocional e desenvolvimento emocional para jovens e adultos.
+              Atendimento com foco em saúde emocional, apoio emocional e desenvolvimento emocional para jovens e adultos.
             </p>
           </aside>
         </Reveal>

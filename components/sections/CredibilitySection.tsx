@@ -24,7 +24,15 @@ export function CredibilitySection() {
           </Reveal>
           <div className="mt-10 grid gap-5 sm:grid-cols-2">
             {content.pillars.map((item, index) => (
-              <Reveal key={item.title} delay={index * 0.06}>
+              <Reveal
+                key={item.title}
+                delay={index * 0.06}
+                className={
+                  index === content.pillars.length - 1
+                    ? "sm:col-span-2 sm:mx-auto sm:w-[calc(50%-0.625rem)]"
+                    : undefined
+                }
+              >
                 <Card title={item.title} description={item.description} />
               </Reveal>
             ))}
@@ -36,7 +44,7 @@ export function CredibilitySection() {
             {/* Replacing note: optional supporting image/card for future professional photos */}
             <Image
               src="/images/detail-placeholder.svg"
-              alt="Elemento visual complementar reforcando credibilidade profissional"
+              alt="Elemento visual complementar reforçando credibilidade profissional"
               width={560}
               height={720}
               className="h-auto w-full rounded-[1.5rem] object-cover"

@@ -31,13 +31,13 @@ export const metadata: Metadata = {
   },
   description,
   keywords: [
-    "psicologa",
+    "psicóloga",
     "psicoterapia individual",
     "terapia para jovens",
     "terapia para adultos",
-    "atendimento psicologico",
-    "saude emocional",
-    "psicologa para jovens e adultos",
+    "atendimento psicológico",
+    "saúde emocional",
+    "psicóloga para jovens e adultos",
     "agendamento de terapia",
     "apoio emocional",
     "desenvolvimento emocional",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         url: "/images/og-clara.svg",
         width: 1200,
         height: 630,
-        alt: "Landing page da psicologa Clara Didier",
+        alt: "Landing page da psicóloga Clara Didier",
       },
     ],
   },
@@ -103,7 +103,7 @@ const structuredData = {
     "Psicoterapia individual",
     "Terapia para jovens",
     "Terapia para adultos",
-    "Saude emocional",
+    "Saúde emocional",
     "Apoio emocional",
   ],
 };
@@ -117,7 +117,7 @@ export default function RootLayout({
     <html lang="pt-BR" className="scroll-smooth">
       <body className={`${manrope.variable} ${cormorant.variable} font-sans antialiased`}>
         <a href="#conteudo-principal" className="skip-link">
-          Pular para o conteudo principal
+          Pular para o conteúdo principal
         </a>
         <TrackingScripts />
         <Header />

@@ -17,7 +17,7 @@ export function AboutSection() {
             {/* Replacing note: swap this image with a real office/session portrait in /public/images */}
             <Image
               src="/images/about-placeholder.svg"
-              alt="Imagem complementar da psicologa Clara Didier em ambiente acolhedor"
+              alt="Imagem complementar da psicóloga Clara Didier em ambiente acolhedor"
               width={560}
               height={680}
               className="h-auto w-full rounded-[1.5rem] object-cover"
