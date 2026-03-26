@@ -7,137 +7,204 @@ export const siteConfig = {
   whatsapp: {
     phone: "5511999999999",
     initialMessage:
-      "Olá, Clara! Gostaria de agendar um atendimento de psicoterapia individual.",
+      "Olá, Clara! Quero agendar minha consulta de terapia.",
   },
   contact: {
     email: "contato@claradidierpsicologia.com.br",
-    city: "Atendimento online e presencial (sob consulta)",
+    city: "Atendimento online para brasileiros no Brasil e no exterior",
   },
 } as const;
 
 export const navigationItems = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Para quem", href: "#publico" },
-  { label: "Benefícios", href: "#beneficios" },
+  { label: "Sinais", href: "#sinais" },
+  { label: "Brasil e Exterior", href: "#onde-estiver" },
   { label: "Diferenciais", href: "#diferenciais" },
+  { label: "Depoimentos", href: "#depoimentos" },
   { label: "FAQ", href: "#faq" },
-  { label: "Agendamento", href: "#agendar" },
-  { label: "Contato", href: "#contato" },
+  { label: "Agendar", href: "#agendar" },
 ] as const;
 
 export const landingContent = {
   hero: {
-    eyebrow: "Psicóloga para jovens e adultos",
-    title: "Psicoterapia individual com escuta qualificada e cuidado humano.",
+    eyebrow: "Psicoterapia online para brasileiros no Brasil e no exterior",
+    title: "Psicóloga especializada em ansiedade, relacionamentos e saúde emocional",
     subtitle:
-      "Um atendimento psicológico aprofundado para quem deseja apoio emocional, desenvolvimento emocional e mais equilíbrio na vida pessoal e profissional.",
+      "Atendimento online para brasileiros no Brasil e no exterior que buscam mais equilíbrio emocional, clareza e qualidade de vida.",
     trustPills: [
-      "Atendimento psicológico para jovens e adultos",
-      "Ambiente ético, acolhedor e confidencial",
-      "Foco em saúde emocional e qualidade de vida",
+      "17 anos de experiência clínica",
+      "Gestalt-terapia com integração em neurociência",
+      "Atendimento humanizado, ativo e profundo",
     ],
     metrics: [
       {
-        title: "Atendimento individual",
-        description: "Processo personalizado e alinhado ao seu momento.",
+        title: "Brasil e exterior",
+        description: "Sessões online para brasileiros em diferentes fusos e rotinas.",
       },
       {
-        title: "Jovens e adultos",
-        description: "Terapia para diferentes fases da vida e desafios reais.",
+        title: "Foco em demandas reais",
+        description: "Ansiedade, relacionamentos, autoestima e sobrecarga emocional.",
       },
       {
-        title: "Escuta profissional",
-        description: "Apoio técnico e humano para evolução emocional.",
+        title: "Processo com direção",
+        description: "Escuta profunda com intervenções práticas para mudança emocional.",
       },
     ],
-    primaryCta: "Agendar pelo WhatsApp",
-    secondaryCta: "Saiba mais",
+    primaryCta: "Agendar consulta",
+    secondaryCta: "Falar no WhatsApp",
+  },
+  painPoints: {
+    eyebrow: "Você se identifica com isso?",
+    title: "Você não precisa lidar com tudo isso sozinho",
+    description:
+      "Se essas dores têm feito parte da sua rotina, a terapia pode ser o espaço para reorganizar emoções e recuperar sua força interna.",
+    items: [
+      "Ansiedade constante",
+      "Sobrecarga emocional",
+      "Dificuldade em relacionamentos",
+      "Sensação de vazio ou insegurança",
+      "Dificuldade de adaptação, especialmente fora do Brasil",
+    ],
+    cta: "Falar no WhatsApp",
   },
   about: {
     eyebrow: "Sobre a profissional",
-    title: "Uma jornada terapêutica com acolhimento, técnica e direção.",
+    title: "Mais do que escutar, presença clínica para te ajudar a atravessar o que hoje parece pesado demais.",
     paragraphs: [
-      "Sou Clara Didier, psicóloga dedicada à psicoterapia individual para jovens e adultos. Meu trabalho integra escuta ativa, ética profissional e um olhar atento para as particularidades de cada história.",
-      "Cada atendimento psicológico é conduzido com respeito ao seu tempo e aos seus objetivos. O foco é promover um espaço seguro de apoio emocional, fortalecimento interno e desenvolvimento emocional consistente.",
+      "Sou Clara Didier, psicóloga clínica com 17 anos de experiência. Atendo jovens e adultos com uma abordagem que une Gestalt-terapia, neurociência e sensibilidade humana.",
+      "Cada processo é individual e respeita seu tempo. A proposta é te ajudar a compreender padrões emocionais, fortalecer sua autonomia e construir relações mais saudáveis com você e com o outro.",
     ],
     highlights: [
-      "17 anos de experiência clínica",
-      "Gestalt-terapia com neurociência aplicada",
-      "Escuta ativa profunda, com técnica e presença",
-      "Processo personalizado para jovens e adultos",
+      "17 anos de prática clínica",
+      "Gestalt-terapia e neurociência aplicadas à vida real",
+      "Escuta ativa, profunda e sem julgamentos",
+      "Atendimento personalizado para brasileiros no Brasil e no exterior",
     ],
   },
   audience: {
     eyebrow: "Para quem é o atendimento",
-    title: "Terapia para jovens e adultos em diferentes momentos da vida.",
+    title: "Atendimento para você, onde quer que esteja",
     description:
-      "Atendimento para quem deseja organizar pensamentos, superar bloqueios e construir relações mais saudáveis com mais clareza emocional.",
-    cards: [
+      "Uma psicoterapia alinhada ao seu contexto, à sua rotina e ao que você está vivendo agora.",
+    blocks: [
       {
-        title: "Terapia para jovens",
-        description:
-          "Apoio para inseguranças, pressão acadêmica, identidade, autonomia e mudanças de fase.",
+        title: "Para quem está no Brasil",
+        points: [
+          "Ansiedade e estresse",
+          "Relacionamentos",
+          "Autoestima",
+          "Questões emocionais",
+        ],
       },
       {
-        title: "Terapia para adultos",
-        description:
-          "Acompanhamento para ansiedade, sobrecarga emocional, relacionamentos, carreira e equilíbrio pessoal.",
+        title: "Para brasileiros no exterior",
+        points: [
+          "Adaptação cultural",
+          "Solidão",
+          "Distância da família",
+          "Ansiedade e insegurança",
+        ],
       },
     ],
   },
   benefits: {
     eyebrow: "Benefícios da psicoterapia",
-    title: "Resultados concretos para sua saúde emocional.",
+    title: "Quando você se compreende melhor, sua vida começa a ficar mais leve e mais clara.",
     items: [
       {
-        title: "Autoconhecimento profundo",
+        title: "Clareza emocional",
         description:
-          "Compreenda padrões emocionais e amplie sua consciência sobre escolhas e comportamentos.",
+          "Entenda o que você sente, por que sente e como agir de forma mais consciente no dia a dia.",
       },
       {
-        title: "Equilíbrio emocional",
+        title: "Redução da ansiedade",
         description:
-          "Desenvolva recursos internos para lidar melhor com ansiedade, estresse e oscilações de humor.",
+          "Aprenda estratégias para diminuir a sobrecarga mental e recuperar estabilidade emocional.",
       },
       {
-        title: "Desenvolvimento pessoal",
+        title: "Relações mais saudáveis",
         description:
-          "Fortaleça autoestima, confiança e senso de direção para construir uma vida com mais sentido.",
+          "Reconheça padrões de relacionamento e desenvolva limites mais claros e seguros.",
       },
       {
-        title: "Fortalecimento emocional",
+        title: "Fortalecimento da autoestima",
         description:
-          "Aprenda a enfrentar desafios com mais resiliência e segurança emocional.",
+          "Construa uma relação mais respeitosa com você, com mais autoconfiança e presença.",
       },
       {
-        title: "Apoio em momentos difíceis",
+        title: "Mais direção na vida",
         description:
-          "Tenha acompanhamento profissional em fases de perdas, mudanças e decisões importantes.",
+          "Saia do piloto automático e tome decisões alinhadas aos seus valores e necessidades reais.",
       },
       {
-        title: "Melhora da qualidade de vida",
+        title: "Acompanhamento contínuo",
         description:
-          "Reduza o desgaste emocional e promova bem-estar em rotina, trabalho e relacionamentos.",
+          "Tenha apoio profissional para atravessar fases difíceis com mais estrutura emocional.",
       },
     ],
   },
   differentials: {
     eyebrow: "Diferenciais",
-    title: "Atuação psicológica com excelência e proximidade.",
+    title: "Um atendimento que vai além da escuta",
     items: [
-      "Psicoterapia individual personalizada",
-      "Atendimento humanizado com escuta ativa",
-      "Abordagem acolhedora e orientada ao processo",
-      "Palestras para empresas sobre saúde emocional",
-      "Palestras para escolas com foco em desenvolvimento socioemocional",
-      "Atendimento online para brasileiros no exterior",
+      "17 anos de experiência clínica",
+      "Abordagem em Gestalt-terapia",
+      "Integração com neurociência",
+      "Atendimento ativo e personalizado",
+      "Escuta profunda e humanizada",
+      "Condução com técnica e sensibilidade",
+    ],
+  },
+  testimonials: {
+    eyebrow: "Depoimentos",
+    title: "Resultados que começam por dentro e aparecem na vida real.",
+    description:
+      "Relatos de quem buscou terapia para ansiedade, relações e saúde emocional.",
+    items: [
+      {
+        name: "A. S.",
+        text: "A terapia me ajudou a entender minhas emoções e sair de um momento muito difícil.",
+      },
+      {
+        name: "L. M.",
+        text: "Consegui reduzir minha ansiedade e me posicionar melhor nos relacionamentos.",
+      },
+      {
+        name: "R. P.",
+        text: "Morar fora estava me deixando muito sozinho. O acompanhamento me deu direção e segurança.",
+      },
+      {
+        name: "C. F.",
+        text: "Foi a primeira vez que me senti realmente acolhido e, ao mesmo tempo, orientado com clareza.",
+      },
+    ],
+  },
+  howItWorks: {
+    eyebrow: "Como funciona",
+    title: "Um processo simples para você começar sua terapia com segurança.",
+    steps: [
+      {
+        title: "Você entra em contato",
+        description:
+          "Envia uma mensagem no WhatsApp com suas dúvidas e disponibilidade.",
+      },
+      {
+        title: "Agendamos sua sessão",
+        description:
+          "Definimos dia, horário e formato do atendimento de acordo com sua rotina.",
+      },
+      {
+        title: "Iniciamos seu acompanhamento terapêutico",
+        description:
+          "Começamos seu processo com acolhimento, direção clínica e objetivos claros.",
+      },
     ],
   },
   credibility: {
     eyebrow: "Credibilidade institucional",
     title: "Cuidado psicológico responsável para seu bem-estar emocional.",
     description:
-      "O processo terapêutico é guiado por ética profissional, confidencialidade e escuta qualificada. Cada sessão é um convite ao acolhimento, à elaboração emocional e ao crescimento pessoal.",
+      "Um espaço de acolhimento com sigilo, ética profissional e compromisso real com o seu desenvolvimento emocional.",
     pillars: [
       {
         title: "Escuta qualificada",
@@ -147,65 +214,60 @@ export const landingContent = {
       {
         title: "Ética profissional",
         description:
-          "Compromisso com sigilo, respeito e conduções técnicas alinhadas às boas práticas.",
+          "Compromisso com sigilo, respeito e práticas alinhadas ao cuidado psicológico.",
       },
       {
         title: "Ambiente seguro",
         description:
-          "Um espaço de acolhimento para desenvolver recursos emocionais com tranquilidade.",
+          "Um espaço para elaborar emoções com tranquilidade e construir novas formas de viver.",
       },
     ],
   },
   cta: {
-    title: "Seu cuidado emocional pode começar agora.",
+    title: "Você não precisa esperar piorar para pedir ajuda.",
     description:
-      "Agende seu atendimento psicológico com Clara Didier e inicie seu processo de terapia com segurança, acolhimento e clareza.",
-    button: "Quero agendar minha sessão",
+      "Se você sente que está sobrecarregado, este pode ser o momento de começar sua terapia com acolhimento e direção.",
+    button: "Começar minha terapia",
     supportText: "Resposta em horário comercial.",
   },
   contact: {
-    eyebrow: "Contato e agendamento de terapia",
-    title: "Fale diretamente comigo pelo WhatsApp.",
+    eyebrow: "Contato e agendamento",
+    title: "Fale comigo e dê o primeiro passo.",
     description:
-      "Se você procura psicóloga para jovens e adultos, envie uma mensagem e receba orientação para iniciar seu atendimento.",
-    button: "Agendar atendimento no WhatsApp",
+      "Envie uma mensagem e vamos organizar seu início na terapia de forma simples e acolhedora.",
+    button: "Agendar consulta",
     infoLabel: "Informações de contato",
   },
   faq: {
     eyebrow: "Dúvidas frequentes",
-    title: "Perguntas frequentes sobre o atendimento psicológico.",
+    title: "Perguntas frequentes sobre a terapia",
     description:
-      "Se esta é sua primeira experiência com terapia, aqui estão respostas objetivas para ajudar você a dar o primeiro passo com segurança.",
+      "Respostas diretas para te ajudar a começar com tranquilidade.",
     items: [
       {
-        question: "Como funciona a psicoterapia individual?",
+        question: "Preciso estar em crise para começar terapia?",
         answer:
-          "Cada sessão é um espaço de escuta acolhedora e profissional, onde trabalhamos suas demandas com profundidade e respeito ao seu ritmo. O processo é personalizado e evolui conforme seus objetivos terapêuticos.",
+          "Não. Muitas pessoas iniciam a terapia para se conhecer melhor, prevenir sofrimento emocional e tomar decisões com mais clareza.",
       },
       {
-        question: "Para quem é indicado o atendimento?",
+        question: "Como funciona o atendimento online?",
         answer:
-          "O atendimento é voltado para jovens e adultos que buscam apoio emocional, autoconhecimento, fortalecimento interno e melhor qualidade de vida em diferentes fases e desafios.",
+          "As sessões acontecem por videochamada, com sigilo e qualidade técnica, no mesmo formato de acolhimento de um atendimento presencial.",
       },
       {
-        question: "Como faço o agendamento da primeira sessão?",
+        question: "Você atende brasileiros fora do Brasil?",
         answer:
-          "O agendamento é feito pelo WhatsApp. Você envia uma mensagem, recebe orientações iniciais e combinamos o melhor formato e horário para iniciar seu atendimento.",
+          "Sim. O atendimento é voltado também para brasileiros no exterior, considerando desafios como adaptação cultural, solidão e distância da família.",
       },
       {
-        question: "Atende jovens e adultos com demandas diferentes?",
+        question: "Como é a primeira sessão?",
         answer:
-          "Sim. O trabalho clínico é adaptado para a realidade de cada pessoa, considerando contexto, momento de vida e necessidade emocional, sempre com abordagem humanizada.",
+          "Na primeira sessão, conversamos sobre o que você está vivendo, seus objetivos e como podemos conduzir o processo terapêutico.",
       },
       {
-        question: "Também realiza palestras para empresas e escolas?",
+        question: "Qual é o próximo passo para agendar?",
         answer:
-          "Sim. Além da psicoterapia individual, realizo palestras para empresas e escolas com foco em saúde emocional, prevenção e desenvolvimento socioemocional.",
-      },
-      {
-        question: "Nunca fiz terapia. Posso começar mesmo assim?",
-        answer:
-          "Com certeza. É normal ter dúvidas no início. O primeiro contato é conduzido com acolhimento e clareza para que você se sinta seguro(a) durante todo o processo.",
+          "Basta clicar no botão de WhatsApp, enviar uma mensagem e eu retorno com orientações para o agendamento.",
       },
     ],
   },
@@ -219,11 +281,11 @@ export const landingContent = {
 } as const;
 
 export const seoSuggestions = {
-  title: "Psicóloga Clara Didier | Psicoterapia Individual para Jovens e Adultos",
+  title: "Psicóloga Clara Didier | Terapia para ansiedade e relacionamentos",
   description:
-    "Psicóloga Clara Didier oferece psicoterapia individual para jovens e adultos com atendimento humanizado, apoio emocional e foco em saúde emocional.",
+    "Psicoterapia online para brasileiros no Brasil e no exterior. Atendimento para ansiedade, relacionamentos e saúde emocional com 17 anos de experiência.",
   openGraphTitle:
-    "Agende sua psicoterapia com Clara Didier | Atendimento para jovens e adultos",
+    "Agendar consulta com Clara Didier | Psicoterapia online para brasileiros",
   openGraphDescription:
-    "Atendimento psicológico com escuta qualificada, acolhimento e foco em desenvolvimento emocional.",
+    "Atendimento psicológico humanizado para ansiedade, autoestima, relacionamentos e adaptação emocional no Brasil e no exterior.",
 } as const;

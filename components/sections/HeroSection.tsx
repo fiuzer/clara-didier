@@ -40,7 +40,15 @@ export function HeroSection() {
             >
               {content.primaryCta}
             </Button>
-            <Button href="#sobre" variant="secondary" size="lg" withArrow>
+            <Button
+              href={whatsappLink}
+              variant="secondary"
+              size="lg"
+              ariaLabel={content.secondaryCta}
+              trackSource="hero_secondary_cta"
+              withArrow
+              attention="glow"
+            >
               {content.secondaryCta}
             </Button>
           </div>
