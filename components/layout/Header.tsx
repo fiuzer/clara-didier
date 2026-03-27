@@ -3,14 +3,11 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import { landingContent, navigationItems, siteConfig } from "@/data/site-content";
-import { getWhatsAppLink } from "@/lib/whatsapp";
+import { navigationItems, siteConfig } from "@/data/site-content";
 
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
 export function Header() {
-  const whatsappLink = getWhatsAppLink();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -36,19 +33,6 @@ export function Header() {
             </a>
           ))}
         </nav>
-
-        <div className="hidden items-center lg:flex">
-          <Button
-            href={whatsappLink}
-            size="md"
-            ariaLabel={landingContent.hero.primaryCta}
-            trackSource="header_cta"
-            withArrow
-            attention="glow"
-          >
-            {landingContent.hero.primaryCta}
-          </Button>
-        </div>
 
         <button
           type="button"
@@ -93,18 +77,6 @@ export function Header() {
                   </a>
                 ))}
               </nav>
-              <Button
-                href={whatsappLink}
-                fullWidth
-                size="lg"
-                className="mt-4 justify-center"
-                ariaLabel={landingContent.hero.primaryCta}
-                trackSource="header_mobile_cta"
-                withArrow
-                attention="glow"
-              >
-                {landingContent.hero.primaryCta}
-              </Button>
             </Container>
           </motion.div>
         ) : null}

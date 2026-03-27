@@ -12,14 +12,14 @@ export function HeroSection() {
   const content = landingContent.hero;
 
   return (
-    <section id="inicio" className="relative overflow-hidden pb-24 pt-32 sm:pb-28 sm:pt-36 lg:pb-32 lg:pt-40">
+    <section id="inicio" className="relative overflow-hidden pb-24 pt-24 sm:pb-28 sm:pt-36 lg:pb-32 lg:pt-40">
       <div className="hero-noise pointer-events-none absolute inset-0 -z-20" />
       <div className="pointer-events-none absolute -left-32 top-16 -z-10 h-72 w-72 rounded-full bg-[color:var(--gold-200)]/45 blur-3xl" />
       <div className="pointer-events-none absolute -right-28 top-28 -z-10 h-96 w-96 rounded-full bg-[color:var(--gold-300)]/30 blur-3xl" />
 
       <Container className="grid items-center gap-14 lg:grid-cols-[1.08fr_0.92fr]">
         <Reveal>
-          <p className="mb-5 inline-flex rounded-full border border-[color:var(--gold-300)] bg-white/75 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[color:var(--gold-700)]">
+          <p className="mb-5 hidden rounded-full border border-[color:var(--gold-300)] bg-white/75 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[color:var(--gold-700)] sm:inline-flex">
             {content.eyebrow}
           </p>
           <h1 className="max-w-2xl font-display text-[2.7rem] leading-[0.97] text-[color:var(--gold-950)] sm:text-[3.35rem] lg:text-[4.2rem]">
@@ -29,7 +29,7 @@ export function HeroSection() {
             {content.subtitle}
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-9">
             <Button
               href={whatsappLink}
               size="lg"
@@ -39,17 +39,6 @@ export function HeroSection() {
               attention="glow"
             >
               {content.primaryCta}
-            </Button>
-            <Button
-              href={whatsappLink}
-              variant="secondary"
-              size="lg"
-              ariaLabel={content.secondaryCta}
-              trackSource="hero_secondary_cta"
-              withArrow
-              attention="glow"
-            >
-              {content.secondaryCta}
             </Button>
           </div>
 

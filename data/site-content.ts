@@ -147,12 +147,36 @@ export const landingContent = {
     eyebrow: "Diferenciais",
     title: "Um atendimento que vai além da escuta",
     items: [
-      "17 anos de experiência clínica",
-      "Abordagem em Gestalt-terapia",
-      "Integração com neurociência",
-      "Atendimento ativo e personalizado",
-      "Escuta profunda e humanizada",
-      "Condução com técnica e sensibilidade",
+      {
+        title: "17 anos de experiência clínica",
+        description:
+          "Experiência no acompanhamento de jovens e adultos com demandas emocionais complexas.",
+      },
+      {
+        title: "Abordagem em Gestalt-terapia",
+        description:
+          "Um trabalho focado no aqui e agora para ampliar consciência e transformar padrões emocionais.",
+      },
+      {
+        title: "Integração com neurociência",
+        description:
+          "Estratégias terapêuticas embasadas para apoiar mudanças emocionais de forma prática e consistente.",
+      },
+      {
+        title: "Atendimento ativo e personalizado",
+        description:
+          "Cada sessão é conduzida de acordo com seu momento de vida, objetivos e ritmo pessoal.",
+      },
+      {
+        title: "Escuta profunda e humanizada",
+        description:
+          "Um espaço seguro para você falar sem julgamento e construir novas formas de lidar com o que sente.",
+      },
+      {
+        title: "Técnica com sensibilidade",
+        description:
+          "Condução clínica com clareza, acolhimento e direção para mudanças reais na sua rotina.",
+      },
     ],
   },
   testimonials: {
