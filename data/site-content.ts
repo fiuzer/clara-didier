@@ -28,7 +28,8 @@ export const navigationItems = [
 export const landingContent = {
   hero: {
     eyebrow: "Psicoterapia online para brasileiros no Brasil e no exterior",
-    title: "Você sente que sua mente não para?",
+    title: "Psicóloga especializada em ansiedade, relacionamentos e saúde emocional",
+    questionSubtitle: "Você sente que sua mente não para?",
     subtitle:
       "Ansiedade, pensamentos acelerados, dificuldade de concentração, cansaço emocional ou relações desgastantes podem estar roubando sua paz — mesmo quando, por fora, parece que está tudo sob controle.",
     supportText:
@@ -284,7 +285,7 @@ export const landingContent = {
     description:
       "Este acompanhamento é para pessoas que desejam um processo terapêutico profundo, humano, consistente e comprometido com resultados reais. Se você sente que precisa se compreender melhor, fortalecer sua vida emocional e sair de padrões que se repetem, a terapia pode ser um caminho importante.",
     button: "Quero iniciar meu processo",
-    supportText: "Atendimento particular com possibilidade de reembolso.",
+    supportText: "Atendimento particular com possibilidade de emissão de reembolso.",
   },
   contact: {
     eyebrow: "Agendamento",
@@ -296,35 +297,49 @@ export const landingContent = {
     infoLabel: "Informações de contato",
   },
   faq: {
-    eyebrow: "Dúvidas frequentes",
-    title: "Perguntas frequentes sobre a terapia",
-    description:
-      "Respostas diretas para te ajudar a começar com tranquilidade.",
+    eyebrow: "FAQ",
+    title: "Dúvidas frequentes",
+    description: "",
     items: [
       {
-        question: "Preciso estar em crise para começar terapia?",
+        question: "Como funcionam as sessões de terapia online?",
         answer:
-          "Não. Muitas pessoas iniciam a terapia para se conhecer melhor, prevenir sofrimento emocional e tomar decisões com mais clareza.",
+          "As sessões são realizadas por videochamada, com sigilo profissional. A frequência costuma ser semanal, mas pode ser ajustada conforme sua necessidade. A terapia online é tão eficaz quanto a presencial e oferece mais conforto e praticidade.",
       },
       {
-        question: "Como funciona o atendimento online?",
+        question: "Você atende pacientes fora do Brasil e em outros fusos horários?",
         answer:
-          "As sessões acontecem por videochamada, com sigilo e qualidade técnica, no mesmo formato de acolhimento de um atendimento presencial.",
+          "Sim. Atendo brasileiros no Brasil e no exterior, com horários flexíveis para diferentes fusos. Buscaremos um horário que funcione para ambos.",
       },
       {
-        question: "Você atende brasileiros fora do Brasil?",
+        question: "Quanto tempo dura a sessão?",
         answer:
-          "Sim. O atendimento é voltado também para brasileiros no exterior, considerando desafios como adaptação cultural, solidão e distância da família.",
+          "A sessão tem duração média de 50 minutos.",
       },
       {
-        question: "Como é a primeira sessão?",
+        question: "Preciso ter diagnóstico para iniciar?",
         answer:
-          "Na primeira sessão, conversamos sobre o que você está vivendo, seus objetivos e como podemos conduzir o processo terapêutico.",
+          "Não. Você pode iniciar terapia mesmo sem diagnóstico.",
       },
       {
-        question: "Qual é o próximo passo para agendar?",
+        question: "Você atende por plano de saúde?",
         answer:
-          "Basta clicar no botão de WhatsApp, enviar uma mensagem e eu retorno com orientações para o agendamento.",
+          "Meu atendimento é exclusivamente particular. No entanto, emito recibo para solicitação de reembolso junto ao plano, caso exista essa possibilidade.",
+      },
+      {
+        question: "Quais formas de pagamento são aceitas?",
+        answer:
+          "Pagamentos via PIX ou transferência bancária. Para pacientes no exterior, também é possível pagar via Wise ou transferência internacional.",
+      },
+      {
+        question: "Como funciona o investimento?",
+        answer:
+          "O atendimento é particular e os valores são informados diretamente no WhatsApp no momento do agendamento.",
+      },
+      {
+        question: "Como faço para agendar?",
+        answer:
+          "Clique no botão do WhatsApp e envie uma mensagem. Você receberá as orientações para agendamento.",
       },
     ],
   },
@@ -343,4 +358,8 @@ export const seoSuggestions = {
   openGraphDescription:
     "Atendimento psicológico online com profundidade, acolhimento e direção para mudanças reais.",
 } as const;
+
+
+
+
 

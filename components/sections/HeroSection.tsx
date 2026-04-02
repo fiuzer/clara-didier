@@ -25,7 +25,10 @@ export function HeroSection() {
           <h1 className="max-w-2xl font-display text-[2.7rem] leading-[0.97] text-[color:var(--gold-950)] sm:text-[3.35rem] lg:text-[4.2rem]">
             {content.title}
           </h1>
-          <p className="mt-7 max-w-2xl text-base leading-relaxed text-[color:var(--slate-700)] sm:text-lg">
+          <p className="mt-5 max-w-2xl text-xl leading-snug text-[color:var(--gold-900)] sm:text-2xl">
+            {content.questionSubtitle}
+          </p>
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-[color:var(--slate-700)] sm:text-lg">
             {content.subtitle}
           </p>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[color:var(--slate-700)] sm:text-lg">
@@ -90,3 +93,4 @@ export function HeroSection() {
     </section>
   );
 }
+
