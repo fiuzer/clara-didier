@@ -1,4 +1,4 @@
-import { landingContent } from "@/data/site-content";
+﻿import { landingContent } from "@/data/site-content";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { Button } from "@/components/ui/Button";
@@ -18,7 +18,6 @@ export function PainPointsSection() {
             id="sinais-title"
             eyebrow={content.eyebrow}
             title={content.title}
-            description={content.description}
           />
         </Reveal>
 
@@ -35,6 +34,10 @@ export function PainPointsSection() {
                 </li>
               ))}
             </ul>
+
+            <p className="mt-7 text-sm leading-relaxed text-[color:var(--slate-700)] sm:text-base">{content.description}</p>
+            <p className="mt-4 text-sm font-medium leading-relaxed text-[color:var(--gold-800)] sm:text-base">📌 {content.note}</p>
+
             <div className="mt-8">
               <Button
                 href={whatsappLink}

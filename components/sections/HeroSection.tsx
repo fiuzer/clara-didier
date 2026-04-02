@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
 import { landingContent } from "@/data/site-content";
 import { getWhatsAppLink } from "@/lib/whatsapp";
@@ -27,6 +27,9 @@ export function HeroSection() {
           </h1>
           <p className="mt-7 max-w-2xl text-base leading-relaxed text-[color:var(--slate-700)] sm:text-lg">
             {content.subtitle}
+          </p>
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-[color:var(--slate-700)] sm:text-lg">
+            {content.supportText}
           </p>
 
           <div className="mt-9">

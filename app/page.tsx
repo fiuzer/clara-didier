@@ -1,4 +1,4 @@
-import { AboutSection } from "@/components/sections/AboutSection";
+﻿import { AboutSection } from "@/components/sections/AboutSection";
 import { AudienceSection } from "@/components/sections/AudienceSection";
 import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -8,6 +8,7 @@ import { DifferentialsSection } from "@/components/sections/DifferentialsSection
 import { FAQSection } from "@/components/sections/FAQSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
+import { LecturesSection } from "@/components/sections/LecturesSection";
 import { PainPointsSection } from "@/components/sections/PainPointsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <CTASection />
       <HowItWorksSection />
       <CredibilitySection />
+      <LecturesSection />
       <FAQSection />
       <ContactSection />
     </>

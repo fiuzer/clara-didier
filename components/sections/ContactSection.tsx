@@ -1,4 +1,4 @@
-import { landingContent, siteConfig } from "@/data/site-content";
+﻿import { landingContent, siteConfig } from "@/data/site-content";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { Button } from "@/components/ui/Button";
@@ -9,7 +9,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 export function ContactSection() {
   const content = landingContent.contact;
   const whatsappLink = getWhatsAppLink(
-    "Olá, Clara! Quero agendar minha consulta.",
+    "Olá, Clara! Quero agendar minha sessão agora.",
   );
 
   return (
@@ -22,6 +22,9 @@ export function ContactSection() {
             title={content.title}
             description={content.description}
           />
+          <p className="mt-5 max-w-2xl text-base font-semibold leading-relaxed text-[color:var(--gold-900)]">
+            {content.emphasis}
+          </p>
           <div className="mt-8 max-w-md">
             <Button
               href={whatsappLink}
@@ -53,8 +56,7 @@ export function ContactSection() {
               {siteConfig.contact.email}
             </a>
             <p className="mt-6 text-sm leading-relaxed text-[color:var(--slate-700)]">
-              Atendimento para ansiedade, relacionamentos, autoestima e saúde emocional, com foco em brasileiros no
-              Brasil e no exterior.
+              Atendimento humanizado para ansiedade, autoestima, TDAH em adultos, luto e relacionamentos.
             </p>
           </aside>
         </Reveal>

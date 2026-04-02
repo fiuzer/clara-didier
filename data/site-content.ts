@@ -1,4 +1,4 @@
-export const siteConfig = {
+﻿export const siteConfig = {
   name: "Clara Didier",
   role: "Psicóloga",
   service: "Psicoterapia individual para jovens e adultos",
@@ -7,20 +7,20 @@ export const siteConfig = {
   whatsapp: {
     phone: "5511999999999",
     initialMessage:
-      "Olá, Clara! Quero agendar minha consulta de terapia.",
+      "Olá, Clara! Quero agendar minha sessão.",
   },
   contact: {
     email: "contato@claradidierpsicologia.com.br",
-    city: "Atendimento online para brasileiros no Brasil e no exterior",
+    city: "Atendimento particular online no Brasil e exterior",
   },
 } as const;
 
 export const navigationItems = [
   { label: "Sobre", href: "#sobre" },
   { label: "Sinais", href: "#sinais" },
-  { label: "Brasil e Exterior", href: "#onde-estiver" },
+  { label: "Exterior", href: "#onde-estiver" },
   { label: "Diferenciais", href: "#diferenciais" },
-  { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Palestras", href: "#palestras" },
   { label: "FAQ", href: "#faq" },
   { label: "Agendar", href: "#agendar" },
 ] as const;
@@ -28,154 +28,157 @@ export const navigationItems = [
 export const landingContent = {
   hero: {
     eyebrow: "Psicoterapia online para brasileiros no Brasil e no exterior",
-    title: "Psicóloga especializada em ansiedade, relacionamentos e saúde emocional",
+    title: "Você sente que sua mente não para?",
     subtitle:
-      "Atendimento online para brasileiros no Brasil e no exterior que buscam mais equilíbrio emocional, clareza e qualidade de vida.",
+      "Ansiedade, pensamentos acelerados, dificuldade de concentração, cansaço emocional ou relações desgastantes podem estar roubando sua paz — mesmo quando, por fora, parece que está tudo sob controle.",
+    supportText:
+      "A terapia pode ser um espaço seguro para compreender o que você sente, fortalecer sua autoestima e construir mudanças reais na sua vida.",
     trustPills: [
-      "17 anos de experiência clínica",
-      "Gestalt-terapia com integração em neurociência",
-      "Atendimento humanizado, ativo e profundo",
+      "Psicóloga Clínica | Escritora | Palestrante",
+      "17 anos de experiência | Atendimento online no Brasil e exterior",
+      "Atendimento particular | recibo para reembolso",
     ],
     metrics: [
       {
-        title: "Brasil e exterior",
-        description: "Sessões online para brasileiros em diferentes fusos e rotinas.",
+        title: "Ansiedade e foco",
+        description: "Atendimento para ansiedade, mente acelerada e dificuldade de concentração.",
       },
       {
-        title: "Foco em demandas reais",
-        description: "Ansiedade, relacionamentos, autoestima e sobrecarga emocional.",
+        title: "Relações e autoestima",
+        description: "Processo terapêutico para relações desgastantes, insegurança e autocobrança.",
       },
       {
-        title: "Processo com direção",
-        description: "Escuta profunda com intervenções práticas para mudança emocional.",
+        title: "Mudança real",
+        description: "Condução clínica para gerar clareza emocional e transformação no cotidiano.",
       },
     ],
-    primaryCta: "Agendar consulta",
+    primaryCta: "Agendar minha sessão",
     secondaryCta: "Falar no WhatsApp",
+    headlineVariants: {
+      a: "Você sente que sua mente não para?",
+      b: "Psicóloga online para ansiedade, relacionamentos e saúde emocional",
+      c: "Psicoterapia particular com profundidade, técnica e acolhimento",
+    },
   },
   painPoints: {
-    eyebrow: "Você se identifica com isso?",
-    title: "Você não precisa lidar com tudo isso sozinho",
+    eyebrow: "Identificação",
+    title: "Talvez você esteja passando por algo assim:",
     description:
-      "Se essas dores têm feito parte da sua rotina, a terapia pode ser o espaço para reorganizar emoções e recuperar sua força interna.",
+      "Muitas pessoas chegam à terapia sem conseguir explicar exatamente o que está acontecendo. Elas apenas sentem que algo dentro delas precisa de atenção. E isso já é motivo suficiente.",
+    note: "Se você se identificou com dois ou mais pontos, a terapia pode te ajudar.",
     items: [
-      "Ansiedade constante",
-      "Sobrecarga emocional",
-      "Dificuldade em relacionamentos",
-      "Sensação de vazio ou insegurança",
-      "Dificuldade de adaptação, especialmente fora do Brasil",
+      "ansiedade constante e mente acelerada",
+      "sensação de sobrecarga e exaustão emocional",
+      "dificuldade de concentração (TDAH em adultos)",
+      "dependência emocional e relações intensas",
+      "insegurança, autocobrança e baixa autoestima",
+      "tristeza frequente, vazio ou desânimo",
+      "luto e perdas difíceis de atravessar",
+      "compulsão por redes sociais, tecnologia ou hábitos repetitivos",
     ],
-    cta: "Falar no WhatsApp",
+    cta: "Quero iniciar meu processo",
   },
   about: {
-    eyebrow: "Sobre a profissional",
-    title: "Mais do que escutar, presença clínica para te ajudar a atravessar o que hoje parece pesado demais.",
+    eyebrow: "Sobre",
+    title: "Quem vai te acompanhar nesse processo",
     paragraphs: [
-      "Sou Clara Didier, psicóloga clínica com 17 anos de experiência. Atendo jovens e adultos com uma abordagem que une Gestalt-terapia, neurociência e sensibilidade humana.",
-      "Cada processo é individual e respeita seu tempo. A proposta é te ajudar a compreender padrões emocionais, fortalecer sua autonomia e construir relações mais saudáveis com você e com o outro.",
+      "Sou Clara Didier, psicóloga clínica com 17 anos de experiência, atuando com adultos e jovens adultos em questões relacionadas à ansiedade, TDAH em adultos, autoestima, luto e relacionamentos.",
+      "Minha prática integra Gestalt-terapia e neurociência, com uma condução dinâmica, sensível e humanizada. Acredito que cada pessoa é única e, por isso, cada processo terapêutico também é.",
     ],
     highlights: [
-      "17 anos de prática clínica",
-      "Gestalt-terapia e neurociência aplicadas à vida real",
-      "Escuta ativa, profunda e sem julgamentos",
-      "Atendimento personalizado para brasileiros no Brasil e no exterior",
+      "Você é maior do que qualquer diagnóstico",
+      "Um diagnóstico pode orientar, mas não define quem você é",
+      "Técnica, presença e condução humanizada",
+      "Processo terapêutico profundo e individual",
     ],
   },
   audience: {
-    eyebrow: "Para quem é o atendimento",
-    title: "Atendimento para você, onde quer que esteja",
+    eyebrow: "Brasileiros no exterior",
+    title: "Você mora fora do Brasil?",
     description:
-      "Uma psicoterapia alinhada ao seu contexto, à sua rotina e ao que você está vivendo agora.",
+      "Atendo brasileiros que vivem no exterior, especialmente na Europa, que enfrentam desafios emocionais como:",
     blocks: [
       {
-        title: "Para quem está no Brasil",
+        title: "Demandas mais comuns",
         points: [
-          "Ansiedade e estresse",
-          "Relacionamentos",
-          "Autoestima",
-          "Questões emocionais",
-        ],
-      },
-      {
-        title: "Para brasileiros no exterior",
-        points: [
-          "Adaptação cultural",
-          "Solidão",
-          "Distância da família",
-          "Ansiedade e insegurança",
+          "solidão e distância da família",
+          "adaptação cultural e recomeços",
+          "ansiedade e sensação de não pertencimento",
+          "crises existenciais e mudanças de vida",
+          "desafios em relacionamentos e identidade emocional",
         ],
       },
     ],
+    supportText:
+      "A terapia online oferece um espaço seguro em português, com profundidade e acolhimento — onde quer que você esteja.",
+    cta: "Agendar terapia online agora",
   },
   benefits: {
-    eyebrow: "Benefícios da psicoterapia",
-    title: "Quando você se compreende melhor, sua vida começa a ficar mais leve e mais clara.",
+    eyebrow: "Benefícios",
+    title: "O processo terapêutico pode ajudar você a:",
     items: [
       {
-        title: "Clareza emocional",
+        title: "Compreender suas emoções",
         description:
-          "Entenda o que você sente, por que sente e como agir de forma mais consciente no dia a dia.",
+          "Identificar com clareza o que você sente e por que determinados padrões se repetem.",
       },
       {
-        title: "Redução da ansiedade",
+        title: "Diminuir a ansiedade",
         description:
-          "Aprenda estratégias para diminuir a sobrecarga mental e recuperar estabilidade emocional.",
+          "Desenvolver recursos práticos para regular emoções e reduzir a sobrecarga mental.",
       },
       {
-        title: "Relações mais saudáveis",
+        title: "Fortalecer sua autoestima",
         description:
-          "Reconheça padrões de relacionamento e desenvolva limites mais claros e seguros.",
+          "Construir uma relação mais segura consigo, com menos autocobrança e mais presença.",
       },
       {
-        title: "Fortalecimento da autoestima",
+        title: "Melhorar relações",
         description:
-          "Construa uma relação mais respeitosa com você, com mais autoconfiança e presença.",
+          "Estabelecer limites, comunicar necessidades e sair de dinâmicas que machucam.",
       },
       {
-        title: "Mais direção na vida",
+        title: "Tomar decisões com clareza",
         description:
-          "Saia do piloto automático e tome decisões alinhadas aos seus valores e necessidades reais.",
+          "Sair do automático e se posicionar com mais consistência na vida pessoal e profissional.",
       },
       {
-        title: "Acompanhamento contínuo",
+        title: "Sustentar mudanças reais",
         description:
-          "Tenha apoio profissional para atravessar fases difíceis com mais estrutura emocional.",
+          "Transformar percepções internas em atitudes concretas no cotidiano.",
       },
     ],
+    footerText:
+      "Mais do que aliviar sintomas, a terapia é um caminho para compreender a si mesmo em profundidade e construir mudanças consistentes em diferentes áreas da sua vida.",
   },
   differentials: {
-    eyebrow: "Diferenciais",
-    title: "Um atendimento que vai além da escuta",
+    eyebrow: "Posicionamento",
+    title: "Mais do que escutar, estou presente no seu processo.",
     items: [
       {
-        title: "17 anos de experiência clínica",
+        title: "Abordagem ativa e acolhedora",
         description:
-          "Experiência no acompanhamento de jovens e adultos com demandas emocionais complexas.",
+          "Minha abordagem é ativa, acolhedora e profundamente humanizada.",
       },
       {
-        title: "Abordagem em Gestalt-terapia",
+        title: "Terapia como construção",
         description:
-          "Um trabalho focado no aqui e agora para ampliar consciência e transformar padrões emocionais.",
+          "A terapia não é apenas um espaço de fala — é um espaço de construção.",
       },
       {
-        title: "Integração com neurociência",
+        title: "Exploração com profundidade",
         description:
-          "Estratégias terapêuticas embasadas para apoiar mudanças emocionais de forma prática e consistente.",
+          "A partir da sua história, exploramos emoções, padrões e sentidos com profundidade.",
       },
       {
-        title: "Atendimento ativo e personalizado",
+        title: "Respeito e direção",
         description:
-          "Cada sessão é conduzida de acordo com seu momento de vida, objetivos e ritmo pessoal.",
-      },
-      {
-        title: "Escuta profunda e humanizada",
-        description:
-          "Um espaço seguro para você falar sem julgamento e construir novas formas de lidar com o que sente.",
+          "Respeito o seu tempo, mas conduzo o processo com consistência e direção.",
       },
       {
         title: "Técnica com sensibilidade",
         description:
-          "Condução clínica com clareza, acolhimento e direção para mudanças reais na sua rotina.",
+          "Utilizo técnica, sim. Mas com alma.",
       },
     ],
   },
@@ -205,61 +208,91 @@ export const landingContent = {
   },
   howItWorks: {
     eyebrow: "Como funciona",
-    title: "Um processo simples para você começar sua terapia com segurança.",
+    title: "Como funciona a terapia comigo",
+    description:
+      "A terapia é um processo construído com profundidade, presença e respeito. Não existe fórmula pronta — existe um caminho.",
     steps: [
       {
-        title: "Você entra em contato",
+        title: "Acolhimento e compreensão",
         description:
-          "Envia uma mensagem no WhatsApp com suas dúvidas e disponibilidade.",
+          "Um espaço seguro para você falar e ser ouvido com verdade.",
       },
       {
-        title: "Agendamos sua sessão",
+        title: "Clareza emocional e identificação de padrões",
         description:
-          "Definimos dia, horário e formato do atendimento de acordo com sua rotina.",
+          "Compreensão de como pensamentos, emoções e comportamentos impactam sua vida.",
       },
       {
-        title: "Iniciamos seu acompanhamento terapêutico",
+        title: "Desenvolvimento de recursos internos",
         description:
-          "Começamos seu processo com acolhimento, direção clínica e objetivos claros.",
+          "Aprendizado para lidar melhor com ansiedade, relações e decisões.",
+      },
+      {
+        title: "Transformação prática no cotidiano",
+        description:
+          "Mudanças reais na forma como você vive, escolhe e se posiciona.",
       },
     ],
+    footerLines: [
+      "Utilizo também recursos expressivos que ajudam a acessar emoções e aprofundar o autoconhecimento.",
+      "Nada é forçado. Tudo tem seu tempo — e esse tempo é respeitado para que o processo gere mudanças reais.",
+    ],
+    cta: "Agendar minha sessão",
   },
   credibility: {
-    eyebrow: "Credibilidade institucional",
-    title: "Cuidado psicológico responsável para seu bem-estar emocional.",
+    eyebrow: "Credibilidade",
+    title: "Cuidado responsável para seu bem-estar emocional",
     description:
-      "Um espaço de acolhimento com sigilo, ética profissional e compromisso real com o seu desenvolvimento emocional.",
+      "Psicoterapia individual com ética profissional, sigilo e compromisso real com seu processo.",
     pillars: [
       {
-        title: "Escuta qualificada",
+        title: "Ética e sigilo",
         description:
-          "Atenção genuína à sua história, sem julgamentos e com direcionamento clínico.",
+          "Um espaço de escuta qualificada com respeito à sua história e à sua privacidade.",
       },
       {
-        title: "Ética profissional",
+        title: "Direção clínica",
         description:
-          "Compromisso com sigilo, respeito e práticas alinhadas ao cuidado psicológico.",
+          "Condução terapêutica consistente, com sensibilidade e foco no que realmente importa para você.",
       },
       {
-        title: "Ambiente seguro",
+        title: "Presença no processo",
         description:
-          "Um espaço para elaborar emoções com tranquilidade e construir novas formas de viver.",
+          "Mais do que ouvir, acompanho seu movimento emocional com presença e responsabilidade.",
       },
     ],
   },
-  cta: {
-    title: "Você não precisa esperar piorar para pedir ajuda.",
+  lectures: {
+    eyebrow: "Palestras",
+    title: "Palestras sobre saúde mental",
     description:
-      "Se você sente que está sobrecarregado, este pode ser o momento de começar sua terapia com acolhimento e direção.",
-    button: "Começar minha terapia",
-    supportText: "Resposta em horário comercial.",
+      "Além da clínica, também atuo como palestrante e escritora. Minhas palestras são dinâmicas, interativas e reflexivas, com conteúdo prático e aplicável ao dia a dia. Os temas podem ser personalizados conforme a necessidade do seu evento.",
+    topics: [
+      "NR-1 e saúde mental nas empresas",
+      "burnout e esgotamento emocional",
+      "ansiedade e gestão emocional",
+      "inteligência emocional no trabalho",
+      "dependência tecnológica e excesso de telas",
+      "autoestima e fortalecimento emocional",
+      "saúde mental na adolescência",
+    ],
+    cta: "Solicitar proposta de palestra",
+    note: "Online ou presencial",
+  },
+  cta: {
+    title: "Para quem este trabalho faz sentido",
+    description:
+      "Este acompanhamento é para pessoas que desejam um processo terapêutico profundo, humano, consistente e comprometido com resultados reais. Se você sente que precisa se compreender melhor, fortalecer sua vida emocional e sair de padrões que se repetem, a terapia pode ser um caminho importante.",
+    button: "Quero iniciar meu processo",
+    supportText: "Atendimento particular com possibilidade de reembolso.",
   },
   contact: {
-    eyebrow: "Contato e agendamento",
-    title: "Fale comigo e dê o primeiro passo.",
+    eyebrow: "Agendamento",
+    title: "Você não precisa enfrentar tudo sozinho.",
     description:
-      "Envie uma mensagem e vamos organizar seu início na terapia de forma simples e acolhedora.",
-    button: "Agendar consulta",
+      "Se algo dentro de você está pedindo cuidado, atenção e acolhimento, não ignore. A terapia pode ser o início de um novo ciclo — com mais clareza, equilíbrio emocional e fortalecimento interno.",
+    emphasis: "Seu processo começa quando você decide não se abandonar.",
+    button: "Quero agendar minha sessão agora",
     infoLabel: "Informações de contato",
   },
   faq: {
@@ -297,19 +330,17 @@ export const landingContent = {
   },
   footer: {
     rights: "Todos os direitos reservados.",
-    links: [
-      { label: "Política de Privacidade", href: "#" },
-      { label: "Termos de Uso", href: "#" },
-    ],
+    links: [],
   },
 } as const;
 
 export const seoSuggestions = {
-  title: "Psicóloga Clara Didier | Terapia para ansiedade e relacionamentos",
+  title: "Psicóloga Clara Didier | Terapia para ansiedade e saúde emocional",
   description:
-    "Psicoterapia online para brasileiros no Brasil e no exterior. Atendimento para ansiedade, relacionamentos e saúde emocional com 17 anos de experiência.",
+    "Psicóloga clínica com 17 anos de experiência. Terapia online para brasileiros no Brasil e exterior com foco em ansiedade, autoestima e relacionamentos.",
   openGraphTitle:
-    "Agendar consulta com Clara Didier | Psicoterapia online para brasileiros",
+    "Agendar sessão com Clara Didier | Psicoterapia online para brasileiros",
   openGraphDescription:
-    "Atendimento psicológico humanizado para ansiedade, autoestima, relacionamentos e adaptação emocional no Brasil e no exterior.",
+    "Atendimento psicológico online com profundidade, acolhimento e direção para mudanças reais.",
 } as const;
+

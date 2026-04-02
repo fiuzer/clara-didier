@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -29,7 +29,7 @@ export function FAQSection() {
             centered
           />
         </Reveal>
-        <div className="mx-auto mt-12 grid max-w-4xl gap-4">
+        <div className="mx-auto mt-10 grid max-w-4xl gap-3">
           {content.items.map((item, index) => {
             const isOpen = openIndex === index;
             const panelId = `faq-panel-${index}`;
@@ -45,7 +45,7 @@ export function FAQSection() {
                       aria-expanded={isOpen}
                       aria-controls={panelId}
                       onClick={() => setOpenIndex(isOpen ? null : index)}
-                      className="flex w-full items-center justify-between gap-5 px-5 py-5 text-left sm:px-6"
+                      className="flex w-full items-center justify-between gap-5 px-6 py-5 text-left"
                     >
                       <span className="text-base font-semibold leading-relaxed text-[color:var(--gold-900)] sm:text-lg">
                         {item.question}
@@ -71,7 +71,7 @@ export function FAQSection() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.25, ease: "easeOut" }}
                       >
-                        <div className="border-t border-[color:var(--gold-150)] px-5 pb-5 pt-4 sm:px-6 sm:pb-6">
+                        <div className="border-t border-[color:var(--gold-150)] px-6 pb-6 pt-4">
                           <p className="text-sm leading-relaxed text-[color:var(--slate-700)] sm:text-base">
                             {item.answer}
                           </p>

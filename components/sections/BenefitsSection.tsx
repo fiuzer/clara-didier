@@ -1,4 +1,4 @@
-import { landingContent } from "@/data/site-content";
+﻿import { landingContent } from "@/data/site-content";
 
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
@@ -21,6 +21,12 @@ export function BenefitsSection() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.08}>
+          <p className="mx-auto mt-10 max-w-4xl text-center text-sm leading-relaxed text-[color:var(--slate-700)] sm:text-base">
+            {content.footerText}
+          </p>
+        </Reveal>
       </Container>
     </section>
   );
