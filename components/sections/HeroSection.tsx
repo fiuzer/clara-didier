@@ -1,6 +1,6 @@
 ﻿import Image from "next/image";
 
-import { landingContent } from "@/data/site-content";
+import { landingContent, siteConfig } from "@/data/site-content";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { Button } from "@/components/ui/Button";
@@ -46,6 +46,9 @@ export function HeroSection() {
             >
               {content.primaryCta}
             </Button>
+            <p className="mt-3 text-sm leading-relaxed text-[color:var(--slate-700)]">
+              {siteConfig.ctaSupportText}
+            </p>
           </div>
 
           <ul className="mt-8 grid gap-2.5">
@@ -93,4 +96,3 @@ export function HeroSection() {
     </section>
   );
 }
-

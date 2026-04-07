@@ -1,4 +1,4 @@
-﻿import { landingContent } from "@/data/site-content";
+﻿import { landingContent, siteConfig } from "@/data/site-content";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { Button } from "@/components/ui/Button";
@@ -49,16 +49,21 @@ export function HowItWorksSection() {
               </p>
             ))}
             <div className="mt-2 flex justify-center">
-              <Button
-                href={whatsappLink}
-                size="lg"
-                ariaLabel={content.cta}
-                trackSource="how_it_works_cta"
-                withArrow
-                attention="glow"
-              >
-                {content.cta}
-              </Button>
+              <div className="text-center">
+                <Button
+                  href={whatsappLink}
+                  size="lg"
+                  ariaLabel={content.cta}
+                  trackSource="how_it_works_cta"
+                  withArrow
+                  attention="glow"
+                >
+                  {content.cta}
+                </Button>
+                <p className="mt-3 text-sm leading-relaxed text-[color:var(--slate-700)]">
+                  {siteConfig.ctaSupportText}
+                </p>
+              </div>
             </div>
           </div>
         </Reveal>

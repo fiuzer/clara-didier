@@ -1,4 +1,4 @@
-import { landingContent } from "@/data/site-content";
+import { landingContent, siteConfig } from "@/data/site-content";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { Button } from "@/components/ui/Button";
@@ -36,6 +36,9 @@ export function CTASection() {
               >
                 {content.button}
               </Button>
+              <p className="mt-3 text-sm leading-relaxed text-[color:var(--slate-700)]">
+                {siteConfig.ctaSupportText}
+              </p>
             </div>
             <p className="mt-5 text-xs uppercase tracking-[0.2em] text-[color:var(--gold-600)]">
               {content.supportText}

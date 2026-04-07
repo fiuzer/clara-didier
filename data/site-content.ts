@@ -4,6 +4,7 @@
   service: "Psicoterapia individual para jovens e adultos",
   siteUrl: "https://claradidierpsicologia.com.br",
   locale: "pt_BR",
+  ctaSupportText: "Atendimento particular | recibo para reembolso",
   whatsapp: {
     phone: "5511999999999",
     initialMessage:
@@ -27,7 +28,7 @@ export const navigationItems = [
 
 export const landingContent = {
   hero: {
-    eyebrow: "Psicoterapia online para brasileiros no Brasil e no exterior",
+    eyebrow: "Online | Jovens e Adultos | Brasil e Exterior",
     title: "Psicóloga especializada em ansiedade, relacionamentos e saúde emocional",
     questionSubtitle: "Você sente que sua mente não para?",
     subtitle:
@@ -37,7 +38,6 @@ export const landingContent = {
     trustPills: [
       "Psicóloga Clínica | Escritora | Palestrante",
       "17 anos de experiência | Atendimento online no Brasil e exterior",
-      "Atendimento particular | recibo para reembolso",
     ],
     metrics: [
       {
@@ -190,20 +190,20 @@ export const landingContent = {
       "Relatos de quem buscou terapia para ansiedade, relações e saúde emocional.",
     items: [
       {
-        name: "A. S.",
-        text: "A terapia me ajudou a entender minhas emoções e sair de um momento muito difícil.",
+        name: "Tania Silva",
+        text: "A terapia me ajudou a organizar meus pensamentos, encontrar equilíbrio emocional e desenvolver amor-próprio em um momento muito difícil.",
       },
       {
-        name: "L. M.",
-        text: "Consegui reduzir minha ansiedade e me posicionar melhor nos relacionamentos.",
+        name: "Glauce",
+        text: "Foi um divisor de águas na minha vida. Hoje me sinto mais segura, confiante e consigo me enxergar melhor.",
       },
       {
-        name: "R. P.",
-        text: "Morar fora estava me deixando muito sozinho. O acompanhamento me deu direção e segurança.",
+        name: "Leonardo",
+        text: "Em um período de luto profundo, encontrei acolhimento e ajuda para atravessar uma fase muito difícil.",
       },
       {
-        name: "C. F.",
-        text: "Foi a primeira vez que me senti realmente acolhido e, ao mesmo tempo, orientado com clareza.",
+        name: "André Dantas",
+        text: "Eu não acreditava em terapia, mas a experiência me trouxe reflexões e uma nova forma de enxergar a mim mesmo.",
       },
     ],
   },
@@ -285,7 +285,7 @@ export const landingContent = {
     description:
       "Este acompanhamento é para pessoas que desejam um processo terapêutico profundo, humano, consistente e comprometido com resultados reais. Se você sente que precisa se compreender melhor, fortalecer sua vida emocional e sair de padrões que se repetem, a terapia pode ser um caminho importante.",
     button: "Quero iniciar meu processo",
-    supportText: "Atendimento particular com possibilidade de emissão de reembolso.",
+    supportText: "Atendimento particular | recibo para reembolso",
   },
   contact: {
     eyebrow: "Agendamento",
@@ -358,8 +358,6 @@ export const seoSuggestions = {
   openGraphDescription:
     "Atendimento psicológico online com profundidade, acolhimento e direção para mudanças reais.",
 } as const;
-
-
 
 
 

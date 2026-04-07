@@ -1,4 +1,4 @@
-﻿import { landingContent } from "@/data/site-content";
+﻿import { landingContent, siteConfig } from "@/data/site-content";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { Button } from "@/components/ui/Button";
@@ -49,6 +49,9 @@ export function PainPointsSection() {
               >
                 {content.cta}
               </Button>
+              <p className="mt-3 text-sm leading-relaxed text-[color:var(--slate-700)]">
+                {siteConfig.ctaSupportText}
+              </p>
             </div>
           </div>
         </Reveal>

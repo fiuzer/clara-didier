@@ -38,6 +38,9 @@ export function ContactSection() {
             >
               {content.button}
             </Button>
+            <p className="mt-3 text-center text-sm leading-relaxed text-[color:var(--slate-700)]">
+              {siteConfig.ctaSupportText}
+            </p>
           </div>
         </Reveal>
 
