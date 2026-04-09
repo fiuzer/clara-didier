@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     default: title,
     template: `%s | ${siteConfig.name}`,
   },
+  icons: {
+    icon: [{ url: "/icon", type: "image/png" }],
+    shortcut: [{ url: "/icon", type: "image/png" }],
+    apple: [{ url: "/icon", type: "image/png" }],
+  },
   description,
   keywords: [
     "psicóloga",
