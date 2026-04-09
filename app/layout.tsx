@@ -25,6 +25,7 @@ const title = seoSuggestions.title;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
+  applicationName: siteConfig.name,
   title: {
     default: title,
     template: `%s | ${siteConfig.name}`,
@@ -35,6 +36,13 @@ export const metadata: Metadata = {
     apple: [{ url: "/icon", type: "image/png" }],
   },
   description,
+  manifest: "/manifest.webmanifest",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  referrer: "origin-when-cross-origin",
   keywords: [
     "psicóloga",
     "psicoterapia individual",
@@ -48,18 +56,18 @@ export const metadata: Metadata = {
     "desenvolvimento emocional",
   ],
   alternates: {
-    canonical: "/",
+    canonical: siteConfig.siteUrl,
   },
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
-    url: "/",
-    siteName: siteConfig.name,
+    url: siteConfig.siteUrl,
+    siteName: `${siteConfig.name} | ${siteConfig.role}`,
     title: seoSuggestions.openGraphTitle,
     description: seoSuggestions.openGraphDescription,
     images: [
       {
-        url: "/images/og-clara.svg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Landing page da psicóloga Clara Didier",
@@ -70,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: seoSuggestions.openGraphTitle,
     description: seoSuggestions.openGraphDescription,
-    images: ["/images/og-clara.svg"],
+    images: ["/twitter-image"],
   },
   robots: {
     index: true,
