@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { navigationItems, siteConfig } from "@/data/site-content";
@@ -16,10 +17,17 @@ export function Header() {
       <Container className="flex h-20 items-center justify-between gap-4">
         <a
           href="#inicio"
-          className="font-display text-[1.9rem] leading-none tracking-wide text-[color:var(--gold-900)] sm:text-[2rem]"
+          className="flex items-center"
           aria-label={`Início - ${siteConfig.name}`}
         >
-          Clara Didier
+          <Image
+            src="/images/logo dourada.png"
+            alt={`Logo ${siteConfig.name}`}
+            width={220}
+            height={64}
+            className="h-auto max-h-[3.6rem] w-[11.5rem] object-contain sm:max-h-[4rem] sm:w-[13rem]"
+            priority
+          />
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Navegação principal">
