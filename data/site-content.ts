@@ -6,7 +6,7 @@
   locale: "pt_BR",
   ctaSupportText: "Atendimento particular | recibo para reembolso",
   whatsapp: {
-    phone: "5511999999999",
+    phone: "5521980219395",
     initialMessage:
       "Olá, Clara! Quero agendar minha sessão.",
   },
@@ -358,5 +358,4 @@ export const seoSuggestions = {
   openGraphDescription:
     "Atendimento psicológico online com profundidade, acolhimento e direção para mudanças reais.",
 } as const;
-
 
