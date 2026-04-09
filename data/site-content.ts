@@ -190,20 +190,20 @@ export const landingContent = {
       "Relatos de quem buscou terapia para ansiedade, relações e saúde emocional.",
     items: [
       {
-        name: "Tania Silva",
-        text: "A terapia me ajudou a organizar meus pensamentos, encontrar equilíbrio emocional e desenvolver amor-próprio em um momento muito difícil.",
+        name: "Tânia",
+        text: "Eu demorei muito para procurar terapia... até me sentir sozinha, confusa e presa em pensamentos que não me levavam a lugar nenhum. Eu estava passando por uma separação e me sentia culpada, vítima, certa e errada ao mesmo tempo. Com a Clara aprendi a organizar meus pensamentos e emoções, tratando cada situação com clareza e profundidade. Encontrei equilíbrio emocional e desenvolvi amor-próprio. Até hoje guardo as palavras dela.",
       },
       {
         name: "Glauce",
-        text: "Foi um divisor de águas na minha vida. Hoje me sinto mais segura, confiante e consigo me enxergar melhor.",
+        text: "Eu fui pela necessidade do meu filho, como sempre pensando em todos menos em mim. Mas, percebi que quem precisava era eu. Foi um divisor de águas. Hoje me sinto mais segura, confiante e consigo me enxergar melhor, sem culpa.",
       },
       {
         name: "Leonardo",
-        text: "Em um período de luto profundo, encontrei acolhimento e ajuda para atravessar uma fase muito difícil.",
+        text: "Cheguei ao fundo do poço num luto que parecia não ter fim. Quando procurei ajuda, encontrei no consultório da Clara calma e paciência para ouvir e entender minha dor. Aos poucos consegui superar essa fase.",
       },
       {
-        name: "André Dantas",
-        text: "Eu não acreditava em terapia, mas a experiência me trouxe reflexões e uma nova forma de enxergar a mim mesmo.",
+        name: "André",
+        text: "Eu não acreditava em psicoterapia, mas depois que vi que precisava e conheci a Clara, mudou muito meu pensamento. Foi uma ótima experiência. As reflexões e orientações fizeram diferença na minha vida.",
       },
     ],
   },
@@ -358,6 +358,5 @@ export const seoSuggestions = {
   openGraphDescription:
     "Atendimento psicológico online com profundidade, acolhimento e direção para mudanças reais.",
 } as const;
-
 
 

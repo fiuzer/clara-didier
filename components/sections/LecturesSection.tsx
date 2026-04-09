@@ -1,12 +1,26 @@
-﻿import Image from "next/image";
-
-import { landingContent } from "@/data/site-content";
+﻿import { landingContent } from "@/data/site-content";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { ImageCarousel } from "@/components/ui/ImageCarousel";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionTitle } from "@/components/ui/SectionTitle";
+
+const lectureImages = [
+  {
+    src: "/images/clara_palestra.png",
+    alt: "Clara Didier durante uma palestra sobre saude mental.",
+  },
+  {
+    src: "/images/palestra_1.jpeg",
+    alt: "Registro de uma palestra conduzida por Clara Didier.",
+  },
+  {
+    src: "/images/palestra_2.jpeg",
+    alt: "Clara Didier em atividade durante uma palestra.",
+  },
+] as const;
 
 export function LecturesSection() {
   const content = landingContent.lectures;
@@ -26,14 +40,7 @@ export function LecturesSection() {
 
         <Reveal delay={0.04}>
           <div className="mt-10 section-surface mx-auto max-w-md rounded-[2rem] p-3 sm:p-4">
-            {/* Replacing note: swap this placeholder for the final lectures photo in /public/images */}
-            <Image
-              src="/images/hero-placeholder.svg"
-              alt="Imagem placeholder para seção de palestras da psicóloga Clara Didier"
-              width={640}
-              height={800}
-              className="h-auto w-full rounded-[1.5rem] object-cover"
-            />
+            <ImageCarousel images={lectureImages} />
           </div>
         </Reveal>
 
