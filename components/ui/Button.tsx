@@ -73,8 +73,8 @@ const variantConfig: Record<ButtonVariant, VariantConfig> = {
 };
 
 const sizeStyles: Record<NonNullable<ButtonProps["size"]>, string> = {
-  md: "h-11 px-5 text-sm",
-  lg: "h-12 px-7 text-sm sm:text-base",
+  md: "h-11 px-4 text-sm sm:px-5",
+  lg: "h-12 px-4 text-[13px] sm:px-7 sm:text-base",
 };
 
 export function Button({
@@ -131,7 +131,7 @@ export function Button({
         if (trackSource) trackWhatsAppClick(trackSource);
       }}
       className={cn(
-        "group relative isolate inline-flex items-center justify-center gap-2 overflow-visible rounded-full font-semibold tracking-[0.01em] transition-all",
+        "group relative isolate inline-flex max-w-full items-center justify-center gap-2 overflow-visible rounded-full font-semibold tracking-[0.01em] transition-all",
         config.base,
         shouldAnimateAttention && "ring-1",
         shouldAnimateAttention && config.ringClass,
@@ -171,7 +171,7 @@ export function Button({
         <span className="absolute -left-14 top-0 h-full w-10 rotate-[16deg] bg-white/35 blur-sm transition-transform duration-500 group-hover:translate-x-[210px]" />
       </span>
 
-      <span className="relative z-10">{children}</span>
+      <span className="relative z-10 text-center">{children}</span>
       {withArrow ? (
         <span
           className={cn(

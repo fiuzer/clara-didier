@@ -1,4 +1,4 @@
-import { landingContent, siteConfig } from "@/data/site-content";
+import { landingContent } from "@/data/site-content";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { Button } from "@/components/ui/Button";
@@ -30,15 +30,12 @@ export function CTASection() {
                 size="lg"
                 ariaLabel={content.button}
                 trackSource="middle_cta"
-                className="min-w-72"
+                className="w-full sm:min-w-72 sm:w-auto"
                 withArrow
                 attention="glow"
               >
                 {content.button}
               </Button>
-              <p className="mt-3 text-sm leading-relaxed text-[color:var(--slate-700)]">
-                {siteConfig.ctaSupportText}
-              </p>
             </div>
             <p className="mt-5 text-xs uppercase tracking-[0.2em] text-[color:var(--gold-600)]">
               {content.supportText}

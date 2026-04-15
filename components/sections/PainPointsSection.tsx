@@ -49,7 +49,7 @@ export function PainPointsSection() {
               >
                 {content.cta}
               </Button>
-              <p className="mt-3 text-sm leading-relaxed text-[color:var(--slate-700)]">
+              <p className="mt-3 whitespace-nowrap text-center text-[13px] leading-relaxed text-[color:var(--slate-700)] sm:text-left sm:text-sm">
                 {siteConfig.ctaSupportText}
               </p>
             </div>
