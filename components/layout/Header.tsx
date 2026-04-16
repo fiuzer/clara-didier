@@ -21,11 +21,19 @@ export function Header() {
           aria-label={`Início - ${siteConfig.name}`}
         >
           <Image
+            src="/images/logo dourada.png"
+            alt={`Logo ${siteConfig.name}`}
+            width={220}
+            height={64}
+            className="h-auto max-h-[4.8rem] w-[15rem] object-contain sm:hidden"
+            priority
+          />
+          <Image
             src="/images/logo branco.png"
             alt={`Logo ${siteConfig.name}`}
             width={220}
             height={64}
-            className="h-auto max-h-[4.8rem] w-[15rem] object-contain sm:max-h-[4.6rem] sm:w-[15rem]"
+            className="hidden h-auto max-h-[4.8rem] w-[15rem] object-contain sm:block sm:max-h-[4.6rem] sm:w-[15rem]"
             priority
           />
         </a>

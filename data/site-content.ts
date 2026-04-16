@@ -1,6 +1,7 @@
 ﻿export const siteConfig = {
   name: "Clara Didier",
   role: "Psicóloga",
+  crp: "CRP 05/41144",
   service: "Psicoterapia individual para jovens e adultos",
   siteUrl: "https://claradidierpsicologia.com.br",
   locale: "pt_BR",

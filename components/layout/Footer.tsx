@@ -20,7 +20,7 @@ export function Footer() {
             className="h-auto w-[10.5rem] sm:w-[12rem]"
           />
           <p className="mt-3 max-w-xl text-sm text-[color:var(--slate-700)]">
-            {siteConfig.role} | {siteConfig.service}
+            {siteConfig.role} | {siteConfig.crp} | {siteConfig.service}
           </p>
           <p className="mt-3 text-xs text-[color:var(--slate-600)]">
             &copy; {year} {siteConfig.name}. {landingContent.footer.rights}
