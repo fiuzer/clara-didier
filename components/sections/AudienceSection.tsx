@@ -63,12 +63,11 @@ export function AudienceSection() {
               size="lg"
               ariaLabel={content.cta}
               trackSource="exterior_cta"
-              withArrow
               attention="glow"
             >
               {content.cta}
             </Button>
-            <p className="mt-3 text-sm leading-relaxed text-[color:var(--slate-700)]">
+            <p className="mt-3 text-sm leading-relaxed text-[color:var(--gold-800)]">
               {siteConfig.ctaSupportText}
             </p>
           </div>

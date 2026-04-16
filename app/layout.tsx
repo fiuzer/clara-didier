@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Cormorant_Garamond, Roboto } from "next/font/google";
 
 import { FloatingWhatsAppButton } from "@/components/layout/FloatingWhatsAppButton";
 import { Footer } from "@/components/layout/Footer";
@@ -9,9 +9,10 @@ import { seoSuggestions, siteConfig } from "@/data/site-content";
 
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
 });
 
 const cormorant = Cormorant_Garamond({
@@ -128,7 +129,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${manrope.variable} ${cormorant.variable} font-sans antialiased`}>
+      <body className={`${roboto.variable} ${cormorant.variable} font-sans antialiased`}>
         <a href="#conteudo-principal" className="skip-link">
           Pular para o conteúdo principal
         </a>

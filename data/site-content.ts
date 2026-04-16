@@ -70,7 +70,7 @@ export const landingContent = {
     items: [
       "ansiedade constante e mente acelerada",
       "sensação de sobrecarga e exaustão emocional",
-      "dificuldade de concentração (TDAH em adultos)",
+      "dificuldade de concentração ou TDAH em adultos",
       "dependência emocional e relações intensas",
       "insegurança, autocobrança e baixa autoestima",
       "tristeza frequente, vazio ou desânimo",
@@ -83,7 +83,7 @@ export const landingContent = {
     eyebrow: "Sobre",
     title: "Quem vai te acompanhar nesse processo",
     paragraphs: [
-      "Sou Clara Didier, psicóloga clínica com 17 anos de experiência, atuando com adultos e jovens adultos em questões relacionadas à ansiedade, TDAH em adultos, autoestima, luto e relacionamentos.",
+      "Sou Clara Didier, psicóloga clínica com 17 anos de experiência, atuando com adultos e jovens em questões relacionadas à ansiedade, TDAH em adultos, autoestima, luto e relacionamentos.",
       "Minha prática integra Gestalt-terapia e neurociência, com uma condução dinâmica, sensível e humanizada. Acredito que cada pessoa é única e, por isso, cada processo terapêutico também é.",
     ],
     highlights: [

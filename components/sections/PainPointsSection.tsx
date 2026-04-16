@@ -44,12 +44,11 @@ export function PainPointsSection() {
                 size="lg"
                 ariaLabel={content.cta}
                 trackSource="after_fold_cta"
-                withArrow
                 attention="glow"
               >
                 {content.cta}
               </Button>
-              <p className="mt-3 whitespace-nowrap text-center text-[13px] leading-relaxed text-[color:var(--slate-700)] sm:text-left sm:text-sm">
+              <p className="mt-3 whitespace-nowrap text-center text-[13px] leading-relaxed text-[color:var(--gold-800)] sm:text-left sm:text-sm">
                 {siteConfig.ctaSupportText}
               </p>
             </div>

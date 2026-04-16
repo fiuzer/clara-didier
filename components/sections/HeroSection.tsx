@@ -19,15 +19,17 @@ export function HeroSection() {
 
       <Container className="grid items-center gap-14 lg:grid-cols-[1.08fr_0.92fr]">
         <Reveal>
-          <p className="mb-5 hidden rounded-full border border-[color:var(--gold-300)] bg-white/75 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[color:var(--gold-700)] sm:inline-flex">
+          <p className="mb-5 inline-flex max-w-full whitespace-nowrap rounded-full border border-[color:var(--gold-300)] bg-white/80 px-2.5 py-1.5 text-[8px] font-semibold uppercase tracking-[0.08em] text-[color:var(--gold-700)] sm:px-4 sm:py-2 sm:text-[11px] sm:tracking-[0.22em]">
             {content.eyebrow}
           </p>
           <h1 className="max-w-2xl font-display text-[2.7rem] leading-[0.97] text-[color:var(--gold-950)] sm:text-[3.35rem] lg:text-[4.2rem]">
             {content.title}
           </h1>
-          <p className="mt-5 max-w-2xl text-xl leading-snug text-[color:var(--gold-900)] sm:text-2xl">
-            {content.questionSubtitle}
-          </p>
+          <div className="mt-6 max-w-2xl border-l-[3px] border-[color:var(--gold-400)] pl-4">
+            <p className="text-[1.08rem] font-medium leading-snug text-[color:var(--gold-900)] sm:text-[1.3rem]">
+              {content.questionSubtitle}
+            </p>
+          </div>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[color:var(--slate-700)] sm:text-lg">
             {content.subtitle}
           </p>
@@ -41,12 +43,11 @@ export function HeroSection() {
               size="lg"
               ariaLabel={content.primaryCta}
               trackSource="hero_primary_cta"
-              withArrow
               attention="glow"
             >
               {content.primaryCta}
             </Button>
-            <p className="mt-3 text-sm leading-relaxed text-[color:var(--slate-700)]">
+            <p className="mt-3 text-sm leading-relaxed text-[color:var(--gold-800)]">
               {siteConfig.ctaSupportText}
             </p>
           </div>

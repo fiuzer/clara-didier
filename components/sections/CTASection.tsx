@@ -31,13 +31,12 @@ export function CTASection() {
                 ariaLabel={content.button}
                 trackSource="middle_cta"
                 className="w-full sm:min-w-72 sm:w-auto"
-                withArrow
                 attention="glow"
               >
                 {content.button}
               </Button>
             </div>
-            <p className="mt-5 text-xs uppercase tracking-[0.2em] text-[color:var(--gold-600)]">
+            <p className="mt-5 text-xs uppercase tracking-[0.2em] text-[color:var(--gold-800)]">
               {content.supportText}
             </p>
           </div>

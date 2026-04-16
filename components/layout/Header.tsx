@@ -14,18 +14,18 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[color:var(--gold-200)] bg-white/82 backdrop-blur-xl">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[3px] bg-[linear-gradient(90deg,var(--gold-metal-4),var(--gold-metal-2),var(--gold-metal-1),var(--gold-metal-3),var(--gold-metal-4))] shadow-[0_0_14px_rgba(213,159,43,0.55)]" />
-      <Container className="flex h-20 items-center justify-between gap-4">
+      <Container className="flex h-24 items-center justify-between gap-4 sm:h-20">
         <a
           href="#inicio"
-          className="flex items-center"
+          className="-ml-7 flex items-center sm:ml-0"
           aria-label={`Início - ${siteConfig.name}`}
         >
           <Image
-            src="/images/logo dourada.png"
+            src="/images/logo branco.png"
             alt={`Logo ${siteConfig.name}`}
             width={220}
             height={64}
-            className="h-auto max-h-[3.6rem] w-[11.5rem] object-contain sm:max-h-[4rem] sm:w-[13rem]"
+            className="h-auto max-h-[4.8rem] w-[15rem] object-contain sm:max-h-[4.6rem] sm:w-[15rem]"
             priority
           />
         </a>

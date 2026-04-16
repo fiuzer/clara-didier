@@ -66,7 +66,6 @@ export function LecturesSection() {
               size="lg"
               ariaLabel={content.cta}
               trackSource="lectures_cta"
-              withArrow
               attention="glow"
             >
               {content.cta}
