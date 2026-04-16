@@ -1,11 +1,21 @@
-import Image from "next/image";
-
 import { landingContent } from "@/data/site-content";
 
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
+import { ImageCarousel } from "@/components/ui/ImageCarousel";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionTitle } from "@/components/ui/SectionTitle";
+
+const credibilityImages = [
+  {
+    src: "/images/third_image.JPG",
+    alt: "Clara Didier em retrato profissional reforçando a proposta da sessão de credibilidade.",
+  },
+  {
+    src: "/images/quarter_image.JPG",
+    alt: "Retrato complementar de Clara Didier para a sessão de credibilidade.",
+  },
+] as const;
 
 export function CredibilitySection() {
   const content = landingContent.credibility;
@@ -41,14 +51,7 @@ export function CredibilitySection() {
 
         <Reveal delay={0.1}>
           <div className="section-surface mx-auto max-w-md rounded-[2rem] p-3 sm:p-4">
-            {/* Replacing note: optional supporting image/card for future professional photos */}
-            <Image
-              src="/images/third_image.JPG"
-              alt="Elemento visual complementar reforçando credibilidade profissional"
-              width={560}
-              height={720}
-              className="h-auto w-full rounded-[1.5rem] object-cover"
-            />
+            <ImageCarousel images={credibilityImages} />
           </div>
         </Reveal>
       </Container>
