@@ -3,7 +3,7 @@
   role: "Psicóloga",
   crp: "CRP 05/41144",
   service: "Psicoterapia individual para jovens e adultos",
-  siteUrl: "https://claradidierpsicologia.com.br",
+  siteUrl: "https://www.psicologaclaradidier.com",
   locale: "pt_BR",
   ctaSupportText: "Atendimento particular | recibo para reembolso",
   whatsapp: {
@@ -12,7 +12,7 @@
       "Olá, Clara! Quero agendar minha sessão.",
   },
   contact: {
-    email: "contato@claradidierpsicologia.com.br",
+    email: "contato@psicologaclaradidier.com",
     city: "Atendimento particular online no Brasil e exterior",
   },
 } as const;
