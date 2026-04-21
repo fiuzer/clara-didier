@@ -1,8 +1,9 @@
 import Script from "next/script";
 
+import { GOOGLE_ADS_TAG_ID } from "@/lib/google-ads";
+
 const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
-const googleAdsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
 
 export function TrackingScripts() {
   return (
@@ -28,22 +29,18 @@ export function TrackingScripts() {
         </Script>
       ) : null}
 
-      {googleAdsId ? (
-        <>
-          <Script
-            id="google-ads-loader"
-            src={`https://www.googletagmanager.com/gtag/js?id=${googleAdsId}`}
-            strategy="afterInteractive"
-          />
-          <Script id="google-ads-script" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          window.gtag = gtag;
-          gtag('js', new Date());
-          gtag('config', '${googleAdsId}');`}
-          </Script>
-        </>
-      ) : null}
+      <Script
+        id="google-ads-loader"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_TAG_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads-script" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', '${GOOGLE_ADS_TAG_ID}');`}
+      </Script>
     </>
   );
 }
