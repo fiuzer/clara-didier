@@ -29,12 +29,20 @@ export function TrackingScripts() {
       ) : null}
 
       {googleAdsId ? (
-        <Script id="google-ads-script" strategy="afterInteractive">
+        <>
+          <Script
+            id="google-ads-loader"
+            src={`https://www.googletagmanager.com/gtag/js?id=${googleAdsId}`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-ads-script" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
           gtag('js', new Date());
           gtag('config', '${googleAdsId}');`}
-        </Script>
+          </Script>
+        </>
       ) : null}
     </>
   );
