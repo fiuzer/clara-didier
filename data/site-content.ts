@@ -29,7 +29,7 @@ export const navigationItems = [
 
 export const landingContent = {
   hero: {
-    eyebrow: "Online | Jovens e Adultos | Brasil e Exterior",
+    eyebrow: "Psicoterapia online em português | Brasileiros no Brasil e no exterior",
     title: "Psicóloga especializada em ansiedade, relacionamentos e saúde emocional",
     questionSubtitle: "Você sente que sua mente não para?",
     subtitle:
@@ -77,6 +77,11 @@ export const landingContent = {
       "tristeza frequente, vazio ou desânimo",
       "luto e perdas difíceis de atravessar",
       "compulsão por redes sociais, tecnologia ou hábitos repetitivos",
+      "solidão e distância da família e dos amigos",
+      "sensação de não pertencer ao novo país",
+      "ansiedade por adaptação cultural e recomeços",
+      "saudade que se transforma em angústia",
+      "dificuldade de construir vínculos e redes de apoio no exterior",
     ],
     cta: "Quero iniciar meu processo",
   },
@@ -98,7 +103,7 @@ export const landingContent = {
     eyebrow: "Brasileiros no exterior",
     title: "Você mora fora do Brasil?",
     description:
-      "Atendo brasileiros que vivem no exterior, especialmente na Europa, que enfrentam desafios emocionais como:",
+      "Atendo brasileiros que vivem fora do Brasil — em Portugal, Reino Unido, Estados Unidos, Japão e outros países — que enfrentam desafios emocionais como:",
     blocks: [
       {
         title: "Demandas mais comuns",
@@ -111,6 +116,8 @@ export const landingContent = {
         ],
       },
     ],
+    timezoneNote:
+      "Atendo nos fusos de Portugal, Reino Unido, Estados Unidos e Japão — com horários flexíveis adaptados à sua rotina.",
     supportText:
       "A terapia online oferece um espaço seguro em português, com profundidade e acolhimento — onde quer que você esteja.",
     cta: "Agendar terapia online agora",
@@ -192,18 +199,22 @@ export const landingContent = {
     items: [
       {
         name: "Tânia",
+        location: "Portugal",
         text: "Eu demorei muito para procurar terapia... até me sentir sozinha, confusa e presa em pensamentos que não me levavam a lugar nenhum. Eu estava passando por uma separação e me sentia culpada, vítima, certa e errada ao mesmo tempo. Com a Clara aprendi a organizar meus pensamentos e emoções, tratando cada situação com clareza e profundidade. Encontrei equilíbrio emocional e desenvolvi amor-próprio. Até hoje guardo as palavras dela.",
       },
       {
         name: "Glauce",
+        location: "Brasil",
         text: "Eu fui pela necessidade do meu filho, como sempre pensando em todos menos em mim. Mas, percebi que quem precisava era eu. Foi um divisor de águas. Hoje me sinto mais segura, confiante e consigo me enxergar melhor, sem culpa.",
       },
       {
         name: "Leonardo",
+        location: "Reino Unido",
         text: "Cheguei ao fundo do poço num luto que parecia não ter fim. Quando procurei ajuda, encontrei no consultório da Clara calma e paciência para ouvir e entender minha dor. Aos poucos consegui superar essa fase.",
       },
       {
         name: "André",
+        location: "Brasil",
         text: "Eu não acreditava em psicoterapia, mas depois que vi que precisava e conheci a Clara, mudou muito meu pensamento. Foi uma ótima experiência. As reflexões e orientações fizeram diferença na minha vida.",
       },
     ],
@@ -313,6 +324,21 @@ export const landingContent = {
           "Sim. Atendo brasileiros no Brasil e no exterior, com horários flexíveis para diferentes fusos. Buscaremos um horário que funcione para ambos.",
       },
       {
+        question: "Quais países e fusos horários você atende?",
+        answer:
+          "Atendo brasileiros em Portugal, Reino Unido, Estados Unidos, Japão e demais países. Os horários são combinados individualmente para se adaptar ao seu fuso — incluindo horário europeu e americano.",
+      },
+      {
+        question: "Como funciona o pagamento para quem mora fora do Brasil?",
+        answer:
+          "O pagamento pode ser realizado por transferência internacional ou por meios digitais combinados no agendamento. Os valores são informados diretamente por mensagem.",
+      },
+      {
+        question: "A terapia online é regulamentada para quem mora em Portugal ou na Europa?",
+        answer:
+          "Sim. O atendimento psicológico online por profissionais brasileiros registrados no CFP é regulamentado e permitido para pacientes em qualquer país. Sou registrada com CRP 05/41144 e atuo dentro das diretrizes éticas do Conselho Federal de Psicologia.",
+      },
+      {
         question: "Quanto tempo dura a sessão?",
         answer:
           "A sessão tem duração média de 50 minutos.",
@@ -335,7 +361,7 @@ export const landingContent = {
       {
         question: "Como funciona o investimento?",
         answer:
-          "O atendimento é particular e os valores são informados diretamente no WhatsApp no momento do agendamento.",
+          "O investimento varia conforme a frequência e o formato do processo. Os valores são informados diretamente por mensagem para garantir um atendimento personalizado — sem pacotes engessados. Atendo de forma particular, com possibilidade de recibo para reembolso em planos de saúde que cobrem psicoterapia.",
       },
       {
         question: "Como faço para agendar?",

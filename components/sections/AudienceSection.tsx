@@ -55,6 +55,9 @@ export function AudienceSection() {
 
         <Reveal delay={0.08}>
           <p className="mx-auto mt-8 max-w-4xl text-sm leading-relaxed text-[color:var(--slate-700)] sm:text-base">
+            {content.timezoneNote}
+          </p>
+          <p className="mx-auto mt-4 max-w-4xl text-sm leading-relaxed text-[color:var(--slate-700)] sm:text-base">
             {content.supportText}
           </p>
           <div className="mx-auto mt-8 w-full max-w-4xl">

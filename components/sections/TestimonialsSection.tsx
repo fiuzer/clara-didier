@@ -32,6 +32,9 @@ export function TestimonialsSection() {
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--gold-600)]">
                   {item.name}
                 </p>
+                <p className="mt-0.5 text-xs text-[color:var(--slate-500)]">
+                  {item.location}
+                </p>
                 <p className="mt-4 text-sm leading-relaxed text-[color:var(--slate-700)] sm:text-base">
                   &ldquo;{item.text}&rdquo;
                 </p>

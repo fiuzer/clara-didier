@@ -29,18 +29,22 @@ export function TrackingScripts() {
         </Script>
       ) : null}
 
-      <Script
-        id="google-ads-loader"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_TAG_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-ads-script" strategy="afterInteractive">
-        {`window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', '${GOOGLE_ADS_TAG_ID}');`}
-      </Script>
+      {GOOGLE_ADS_TAG_ID ? (
+        <>
+          <Script
+            id="google-ads-loader"
+            src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_TAG_ID}`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-ads-script" strategy="afterInteractive">
+            {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', '${GOOGLE_ADS_TAG_ID}');`}
+          </Script>
+        </>
+      ) : null}
     </>
   );
 }

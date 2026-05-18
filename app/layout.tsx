@@ -5,7 +5,7 @@ import { FloatingWhatsAppButton } from "@/components/layout/FloatingWhatsAppButt
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { TrackingScripts } from "@/components/layout/TrackingScripts";
-import { seoSuggestions, siteConfig } from "@/data/site-content";
+import { landingContent, siteConfig } from "@/data/site-content";
 
 import "./globals.css";
 
@@ -21,8 +21,12 @@ const cormorant = Cormorant_Garamond({
   weight: ["400", "500", "600", "700"],
 });
 
-const description = seoSuggestions.description;
-const title = seoSuggestions.title;
+const title = "Psicóloga Online para Brasileiros no Exterior | Clara Didier";
+const description =
+  "Você mora fora do Brasil e precisa de apoio emocional em português? Clara Didier oferece psicoterapia online para brasileiros em Portugal, UK, EUA e Japão. Agende sua sessão.";
+const ogTitle = "Agendar sessão com Clara Didier | Psicoterapia online para brasileiros";
+const ogDescription =
+  "Psicoterapia online em português para brasileiros que vivem fora do Brasil. Atendimento humanizado com foco em ansiedade, adaptação cultural, relacionamentos e saúde emocional.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -64,8 +68,8 @@ export const metadata: Metadata = {
     locale: siteConfig.locale,
     url: siteConfig.siteUrl,
     siteName: `${siteConfig.name} | ${siteConfig.role}`,
-    title: seoSuggestions.openGraphTitle,
-    description: seoSuggestions.openGraphDescription,
+    title: ogTitle,
+    description: ogDescription,
     images: [
       {
         url: "/opengraph-image",
@@ -77,8 +81,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: seoSuggestions.openGraphTitle,
-    description: seoSuggestions.openGraphDescription,
+    title: ogTitle,
+    description: ogDescription,
     images: ["/twitter-image"],
   },
   robots: {
@@ -103,11 +107,19 @@ export const viewport: Viewport = {
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": ["Person", "MedicalBusiness"],
   name: siteConfig.name,
   jobTitle: siteConfig.role,
   url: siteConfig.siteUrl,
-  description,
+  description:
+    "Psicóloga clínica com 17 anos de experiência. Psicoterapia online para brasileiros no Brasil e no exterior.",
+  medicalSpecialty: "Psychiatry",
+  availableService: {
+    "@type": "MedicalTherapy",
+    name: "Psicoterapia online individual",
+  },
+  areaServed: ["Brasil", "Portugal", "Reino Unido", "Estados Unidos", "Japão"],
+  knowsLanguage: "pt-BR",
   sameAs: [],
   worksFor: {
     "@type": "Organization",
@@ -120,6 +132,19 @@ const structuredData = {
     "Saúde emocional",
     "Apoio emocional",
   ],
+};
+
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: landingContent.faq.items.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
 };
 
 export default function RootLayout({
@@ -138,7 +163,14 @@ export default function RootLayout({
         <main id="conteudo-principal">{children}</main>
         <Footer />
         <FloatingWhatsAppButton />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+        />
       </body>
     </html>
   );

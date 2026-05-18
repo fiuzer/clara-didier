@@ -15,7 +15,8 @@ export function trackWhatsAppClick(source: string) {
   const payload = {
     event: "whatsapp_click",
     source,
-    timestamp: new Date().toISOString(),
+    timestamp: Date.now(),
+    conversion: true,
   };
 
   safeWindow.dataLayer?.push(payload);
